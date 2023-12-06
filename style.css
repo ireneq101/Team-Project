@@ -1,0 +1,51 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+section {
+    background-image: url(hero1.png);
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 200vh;
+}
+
+section > .heading {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    justify-content: space-between;
+    padding: 2% 4%;
+}
+
+section > .heading nav a {
+    color: var(--Mid-grey, #AFAFAF);
+    font-family: 'Playfair Display';
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 140%;
+    text-decoration: none;
+    padding: 0 20px;
+}
+
+section > .heading nav .home {
+    color: var(--Pry, #005C4D);
+    font-family: 'Playfair Display';
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 140%;
+}
+
+section > .heading nav button {
+    padding: 12px 40px;
+    color: var(--White, #FFF);
+    font-family: 'Playfair Display';
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 140%;
+    border-radius: 100px;
+    background: var(--Pry, #005C4D);
+}
