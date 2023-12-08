@@ -95,7 +95,7 @@ button {
     display: none;
 } */
 
-section {
+main > .irene {
     background-image: url(zuzu.png);
     display: flex;
     justify-content: center;
@@ -104,7 +104,7 @@ section {
     height: 100vh;
 }
 
-section h1 {
+main > .irene h1 {
     justify-content: center;
     text-align: center;
     color: var(--grey, #FFF);
@@ -116,12 +116,12 @@ section h1 {
     margin: 17% 0;
 }
 
-.duddy {
+main > .duddy {
     width: 100%;
     margin: 7% 0;
 }
 
-.duddy h2 {
+main > .duddy h2 {
     color: var(--Pry, #005C4D);
     font-family: 'Playfair Display';
     text-align: center;
@@ -132,12 +132,12 @@ section h1 {
     padding-bottom: 32px;
 }
 
-.duddy > .grey {
+main > .duddy .grey {
     width: 50%;
     margin: 0 27.5%;
 }
 
-.duddy > .grey p {
+main > .duddy .grey p {
     color: var(--Grey, #4B4B4B);
     text-align: center;
     font-family: 'Playfair Display';
@@ -148,7 +148,7 @@ section h1 {
     max-width: 85%;
 }
 
-.section1 {
+main > .section1 {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -158,16 +158,16 @@ section h1 {
     background: var(--Light-grey, #FAFAFA);
 }
 
-.section1 > .image7 {
+main > .section1 .image7 {
     width: 45%;
 }
 
-.section1 > .image7 img {
+main > .section1 .image7 img {
     width: 70rem;
     margin-left: 20%;
 }
 
-.icons {
+main > .icons {
     width: 20%;
 }
 
