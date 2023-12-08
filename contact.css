@@ -1,0 +1,273 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    max-width: 1540%;
+    margin: 0 auto;
+}
+
+header {
+    background-color: white;
+    position: sticky;
+    top: 0;
+    z-index: 2;
+}
+
+
+header > div {
+    display: flex;
+    gap: 10%;
+    /* justify-content: space-between; */
+    align-items: center;
+    margin: auto;
+}
+
+
+
+header > div .left {
+    display: flex;
+    width: 40%;
+    margin: 2% 5%;
+}
+
+header > div .left img {
+    width: 30%;
+}
+
+
+.head > img {
+    display: none;
+}
+
+
+
+nav {
+    width: 35%;
+    margin: 2% 4% 1% 0;
+}
+
+
+
+nav a {
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    padding: 2%;
+    color: var(--Mid-grey, #AFAFAF);
+    font-style: normal;
+    font-weight: 600;
+    font-family: 'Playfair Display';
+    font-size: 1.5rem;
+}
+
+.contact {
+    color: var(--Pry, #005C4D);
+    font-family: 'Playfair Display';
+    font-size: 150%;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 140%;
+}
+
+button {
+    padding: 12px 30px;
+    font-style: normal;
+    font-size: 150%;
+    border-radius: 100px;
+    background: var(--Pry, #005C4D);
+    color: white;
+}
+
+
+/* .nav2 a {
+    text-decoration: none;
+    color: var(--Mid-grey, #AFAFAF);
+    font-family: 'Playfair Display';
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 140%;
+    gap: 54px;
+    display: none;
+} */
+
+/* section {
+    background-image: url(Hero.png);
+    display: flex;
+    justify-content: center;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+} */
+
+section h1 {
+    justify-content: center;
+    text-align: center;
+    margin: 20% auto;
+    color: var(--grey, #FFF);
+    font-family: 'Playfair Display';
+    font-size: 56px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.duddy {
+    width: 100%;
+    margin: 7% 0;
+}
+
+.duddy h2 {
+    color: var(--Pry, #005C4D);
+    font-family: 'Playfair Display';
+    text-align: center;
+    font-size: 44px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    padding-bottom: 32px;
+}
+
+.duddy > .grey {
+    width: 50%;
+    margin: 0 27.5%;
+}
+
+.duddy > .grey p {
+    color: var(--Grey, #4B4B4B);
+    text-align: center;
+    font-family: 'Playfair Display';
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%;
+    max-width: 85%;
+}
+
+.section1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10%;
+    padding: 90px 0;
+    margin-bottom: 40px;
+    background: var(--Light-grey, #FAFAFA);
+}
+
+.section1 > .image7 {
+    width: 45%;
+}
+
+.section1 > .image7 img {
+    width: 70rem;
+    margin-left: 20%;
+}
+
+.icons {
+    width: 20%;
+}
+
+.icons > div h5 {
+    color: var(--Pry, #005C4D);
+    font-family: 'Playfair Display';
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 140%;
+}
+
+.icons > p {
+    color: var(--Grey, #4B4B4B);
+    font-family: 'Playfair Display';
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%;
+}
+
+.icons > .locate, .mail, .device, .shop {
+    display: flex;
+    gap: 24px;
+    margin-bottom: 40px;
+}
+
+.section2 {
+    padding: 7%;
+    width: 100%;
+}
+
+.section2 image {
+    width: 100rem;
+}
+
+.section2 > .gogo {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    margin-bottom: 3%;
+}
+
+.section2 > .gogo p {
+    color: var(--Grey, #4B4B4B);
+    font-family: 'Playfair Display';
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 140%;
+}
+
+footer {
+    background-color: var(--Pry, #005C4D);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+    padding: 40px 0;
+    margin-top: 13%;
+}
+
+footer > .icons {
+    padding-left: 80px;
+}
+
+footer > .icons svg {
+    width: 40px;
+    height: 36px;
+    gap: 40px;
+    border: 2px solid #DCE9E2;
+    border-radius: 90%;
+    border-width: 300ms;
+    background-color: var(--Sec, #DCE9E2);
+    color: white;
+    transition: transform 300ms;
+    margin: 25px 0;
+}
+
+/* footer > .icons:hover {
+    border-width: 1px;
+}
+
+footer > .icons:hover svg {
+    transform: scale(1.4);
+} */
+
+footer > .p {
+    color: var(--Ter, #F8FCFB);
+    text-align: center;
+    font-family: 'Playfair Display';
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 140%;
+}
+
+@media screen and (max-width: 1600px) {
+    section {
+        height: 200vh;
+    }
+}
