@@ -4,22 +4,19 @@
     box-sizing: border-box;
 }
 
-section {
-    background-image: url(hero1.png);
-    background-repeat: no-repeat;
-    width: 100%;
-    height: 150vh;
-}
-
-section > .heading {
+.iren {
     display: flex;
     justify-content: center;
     align-content: center;
     justify-content: space-between;
     padding: 2% 7%;
+    background: var(--Ter, #F8FCFB);
+    position: fixed;
+    z-index: 4;
+    width: 100%;
 }
 
-section > .heading nav a {
+.iren > nav a {
     color: var(--Mid-grey, #AFAFAF);
     font-family: 'Playfair Display';
     font-size: 1.5rem;
@@ -27,10 +24,19 @@ section > .heading nav a {
     font-weight: 600;
     line-height: 140%;
     text-decoration: none;
-    padding: 0 20px;
+    padding: 12px 20px;
+    justify-content: center;
+    align-items: center;
 }
 
-section > .heading nav .home {
+.iren > nav a:hover {
+    transition: 0.25s;
+    border-radius: 100px;
+    background: var(--Pry, #005C4D);
+    color: white;
+}
+
+.iren nav .home {
     color: var(--Pry, #005C4D);
     font-family: 'Playfair Display';
     font-size: 1.5rem;
@@ -38,7 +44,7 @@ section > .heading nav .home {
     line-height: 140%;
 }
 
-section > .heading nav button {
+.iren nav button {
     padding: 12px 40px;
     color: var(--White, #FFF);
     font-family: 'Playfair Display';
@@ -50,6 +56,20 @@ section > .heading nav button {
     background: var(--Pry, #005C4D);
 }
 
+.iren nav button:hover {
+    border-radius: 100px;
+    background-color: var(--White, #FFF);
+    color: var(--Pry, #005C4D);
+    transition: 0.25s;
+}
+
+section {
+    background-image: url(hero1.png);
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 150vh;
+}
+
 .first-sect {
     display: flex;
     /* justify-content: space-between; */
@@ -59,7 +79,7 @@ section > .heading nav button {
 .first-sect > .sect {
     width: 45%;
     justify-content: center;
-    margin: 13% 7%;
+    margin: 24% 7%;
 }
 
 .first-sect > .sect h1 {
@@ -69,7 +89,7 @@ section > .heading nav button {
     font-style: normal;
     font-weight: 700;
     line-height: normal;
-    padding-bottom: 16px;
+    padding-bottom: 25px;
 }
 
 .first-sect > .sect p {
@@ -79,7 +99,7 @@ section > .heading nav button {
     font-style: normal;
     font-weight: 400;
     line-height: 140%;
-    padding-bottom: 16px;
+    padding-bottom: 25px;
     max-width: 65%;
 }
 
@@ -95,6 +115,13 @@ section > .heading nav button {
     background: var(--Pry, #005C4D);
 }
 
+.first-sect > .sect button:hover {
+    border-radius: 100px;
+    background-color: var(--White, #FFF);
+    color: var(--Pry, #005C4D);
+    transition: 0.25s;
+}
+
 .first-sect > .sectyy {
     width: 45%;
 }
@@ -106,7 +133,7 @@ section > .heading nav button {
     border-bottom-right-radius: 35%;
     border-top-left-radius: 35%;
     right: 8%;
-    bottom: -5%;
+    bottom: -9%;
     z-index: 2;
 }
 
@@ -114,7 +141,7 @@ section > .heading nav button {
     position: relative;
     width: 82%;
     left: 16%;
-    bottom: -2%
+    bottom: -15%
 }
 
 main > .section1 {
@@ -314,6 +341,13 @@ main >  .section1 .okay h5 {
     line-height: 140%;
 }
 
+.section4 > .semi-section5 div .read:hover {
+    /* border-radius: 5px; */
+    /* background-color: var(--White, #FFF); */
+    color: rgb(140, 136, 136);
+    transition: 0.25s;
+}
+
 .section4 > .btn {
     display: flex;
     margin-top: 5%;
@@ -333,6 +367,13 @@ main >  .section1 .okay h5 {
     border-radius: 100px;
     background: var(--Pry, #005C4D);
     margin: 0 auto;
+}
+
+.section4 > .btn button:hover {
+    border-radius: 100px;
+    background-color: var(--White, #FFF);
+    color: var(--Pry, #005C4D);
+    transition: 0.25s;
 }
 
 .section5 {
@@ -434,16 +475,15 @@ footer > .icons svg {
     background-color: var(--Sec, #DCE9E2);
     color: white;
     transition: transform 300ms;
-    margin: 25px 0;
+    margin: 25px 15px;
 }
 
-/* footer > .icons:hover {
-    border-width: 1px;
+footer > .icons svg:hover {
+    border-radius: 100px;
+    background-color: var(--White, #FFF);
+    color: var(--White, #FFF);
+    transition: 0.35s;
 }
-
-footer > .icons:hover svg {
-    transform: scale(1.4);
-} */
 
 footer > .p {
     color: var(--Ter, #F8FCFB);

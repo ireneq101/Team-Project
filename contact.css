@@ -64,6 +64,13 @@ nav a {
     font-size: 1.5rem;
 }
 
+nav a:hover {
+    transition: 0.25s;
+    border-radius: 100px;
+    background: var(--Pry, #005C4D);
+    color: white;
+}
+
 .contact {
     color: var(--Pry, #005C4D);
     font-family: 'Playfair Display';
@@ -80,6 +87,13 @@ button {
     border-radius: 100px;
     background: var(--Pry, #005C4D);
     color: white;
+}
+
+button:hover {
+    border-radius: 100px;
+    background-color: var(--White, #FFF);
+    color: var(--Pry, #005C4D);
+    transition: 0.25s;
 }
 
 
@@ -245,16 +259,15 @@ footer > .icons svg {
     background-color: var(--Sec, #DCE9E2);
     color: white;
     transition: transform 300ms;
-    margin: 25px 0;
+    margin: 25px 15px;
 }
 
-/* footer > .icons:hover {
-    border-width: 1px;
+footer > .icons svg:hover {
+    border-radius: 100px;
+    background-color: var(--White, #FFF);
+    color: var(--White, #FFF);
+    transition: 0.35s;
 }
-
-footer > .icons:hover svg {
-    transform: scale(1.4);
-} */
 
 footer > .p {
     color: var(--Ter, #F8FCFB);
