@@ -10,68 +10,39 @@ body {
     margin: 0 auto;
 }
 
-header {
-    background-color: white;
-    position: sticky;
-    top: 0;
-    z-index: 2;
-}
-
-
-header > div {
+header > .iren {
     display: flex;
-    gap: 10%;
-    /* justify-content: space-between; */
-    align-items: center;
-    margin: auto;
-}
-
-
-
-header > div .left {
-    display: flex;
-    width: 40%;
-    margin: 2% 5%;
-}
-
-header > div .left img {
-    width: 30%;
-}
-
-
-/* .head > img {
-    display: none;
-} */
-
-
-
-nav {
-    width: 35%;
-    margin: 2% 4% 1% 0;
-}
-
-
-
-nav a {
     justify-content: center;
-    align-items: center;
-    text-decoration: none;
-    padding: 2%;
+    align-content: center;
+    justify-content: space-between;
+    padding: 2% 7%;
+    background: var(--Ter, #F8FCFB);
+    position: fixed;
+    z-index: 4;
+    width: 100%;
+}
+
+header > .iren > nav a {
     color: var(--Mid-grey, #AFAFAF);
-    font-style: normal;
-    font-weight: 600;
     font-family: 'Playfair Display';
     font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 140%;
+    text-decoration: none;
+    padding: 12px 20px;
+    justify-content: center;
+    align-items: center;
 }
 
-nav a:hover {
+header > .iren > nav a:hover {
     transition: 0.25s;
     border-radius: 100px;
     background: var(--Pry, #005C4D);
     color: white;
 }
 
-.services {
+header > .iren .services {
     color: var(--Pry, #005C4D);
     font-family: 'Playfair Display';
     font-size: 150%;
@@ -80,7 +51,7 @@ nav a:hover {
     line-height: 140%;
 }
 
-button {
+header > .iren button {
     padding: 0.75rem 1.875rem;
     font-style: normal;
     font-size: 150%;
@@ -89,7 +60,7 @@ button {
     color: white;
 }
 
-button:hover {
+header > .iren button:hover {
     border-radius: 100px;
     background-color: var(--White, #FFF);
     color: var(--Pry, #005C4D);
@@ -116,13 +87,13 @@ section {
     display: flex;
     justify-content: center;
     width: 100%;
-    /* height: 87vh; */
+    height: 115vh;
 }
 
 section h1 {
     justify-content: center;
     text-align: center;
-    margin: 20% auto;
+    padding: 25% 0;
     color: var(--White, #FFF);
     font-family: 'Playfair Display';
     font-size: 4rem;

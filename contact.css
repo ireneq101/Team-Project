@@ -10,68 +10,39 @@ body {
     margin: 0 auto;
 }
 
-header {
-    background-color: white;
-    position: sticky;
+header > .ire {
+    display: flex;
+    align-content: center;
+    justify-content: space-between;
+    padding: 2% 4%;
+    background: var(--Ter, #F8FCFB);
+    position: fixed;
     top: 0;
-    z-index: 2;
+    z-index: 4;
+    width: 100%;
 }
 
-
-header > div {
-    display: flex;
-    gap: 10%;
-    /* justify-content: space-between; */
-    align-items: center;
-    margin: auto;
-}
-
-
-
-header > div .left {
-    display: flex;
-    width: 40%;
-    margin: 2% 5%;
-}
-
-header > div .left img {
-    width: 30%;
-}
-
-
-.head > img {
-    display: none;
-}
-
-
-
-nav {
-    width: 35%;
-    margin: 2% 4% 1% 0;
-}
-
-
-
-nav a {
-    justify-content: center;
-    align-items: center;
-    text-decoration: none;
-    padding: 2%;
+header > .ire nav a {
     color: var(--Mid-grey, #AFAFAF);
-    font-style: normal;
-    font-weight: 600;
     font-family: 'Playfair Display';
     font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 140%;
+    text-decoration: none;
+    padding: 12px 20px;
+    justify-content: center;
+    align-items: center;
 }
 
-nav a:hover {
+header > .ire nav a:hover {
     transition: 0.25s;
     border-radius: 100px;
     background: var(--Pry, #005C4D);
     color: white;
 }
 
-.contact {
+header > .ire .contact {
     color: var(--Pry, #005C4D);
     font-family: 'Playfair Display';
     font-size: 150%;
@@ -81,12 +52,15 @@ nav a:hover {
 }
 
 button {
-    padding: 12px 30px;
+    padding: 12px 40px;
+    color: var(--White, #FFF);
+    font-family: 'Playfair Display';
+    font-size: 1.375rem;
     font-style: normal;
-    font-size: 150%;
+    font-weight: 700;
+    line-height: 140%;
     border-radius: 100px;
     background: var(--Pry, #005C4D);
-    color: white;
 }
 
 button:hover {
@@ -109,16 +83,15 @@ button:hover {
     display: none;
 } */
 
-main > .irene {
-    background-image: url(zuzu.png);
-    display: flex;
-    justify-content: center;
+section > .irene {
+    background-image: url(hero2.png);
     background-repeat: no-repeat;
     width: 100%;
-    height: 100vh;
+    height: 90vh;
+    margin: 100px 0;
 }
 
-main > .irene h1 {
+section > .irene h1 {
     justify-content: center;
     text-align: center;
     color: var(--grey, #FFF);
@@ -127,15 +100,15 @@ main > .irene h1 {
     font-style: normal;
     font-weight: 700;
     line-height: normal;
-    margin: 17% 0;
+    padding: 17% 0;
 }
 
-main > .duddy {
+section > .duddy {
     width: 100%;
     margin: 7% 0;
 }
 
-main > .duddy h2 {
+section > .duddy h2 {
     color: var(--Pry, #005C4D);
     font-family: 'Playfair Display';
     text-align: center;
@@ -146,12 +119,12 @@ main > .duddy h2 {
     padding-bottom: 32px;
 }
 
-main > .duddy .grey {
+section > .duddy .grey {
     width: 50%;
     margin: 0 27.5%;
 }
 
-main > .duddy .grey p {
+section > .duddy .grey p {
     color: var(--Grey, #4B4B4B);
     text-align: center;
     font-family: 'Playfair Display';
@@ -162,7 +135,7 @@ main > .duddy .grey p {
     max-width: 85%;
 }
 
-main > .section1 {
+section > .section1 {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -172,16 +145,16 @@ main > .section1 {
     background: var(--Light-grey, #FAFAFA);
 }
 
-main > .section1 .image7 {
+section > .section1 .image7 {
     width: 45%;
 }
 
-main > .section1 .image7 img {
-    width: 70rem;
+section > .section1 .image7 img {
+    width: 100%;
     margin-left: 20%;
 }
 
-main > .icons {
+section > .icons {
     width: 20%;
 }
 
@@ -215,7 +188,7 @@ main > .icons {
 }
 
 .section2 image {
-    width: 100rem;
+    width: 100%;
 }
 
 .section2 > .gogo {
