@@ -70,20 +70,19 @@ header > .iren nav button:hover {
     transition: 0.25s;
 }
 
-header > .nav2 {
-    display: none;
-}
-
-header > div .menuopen {
+.menu-icon {
     display: none;
     cursor: pointer;
 }
 
-header > div .menuclose {
+.menu-icon-close {
     display: none;
     cursor: pointer;
 }
 
+.nav2 {
+    display: none;
+}
 
 section {
     background-image: url(hero1.png);
@@ -129,7 +128,7 @@ section {
     padding: 12px 40px;
     color: var(--White, #FFF);
     font-family: 'Playfair Display';
-    font-size: 1.375;
+    font-size: 1.375rem;
     font-style: normal;
     font-weight: 700;
     line-height: 140%;
@@ -149,21 +148,26 @@ section {
 }
 
 .first-sect > .sectyy .first-pic {
-    position: absolute;
-    width: 100;
+    position: relative;
+    width: 90%;
     border-bottom-left-radius: 35%;
     border-bottom-right-radius: 35%;
     border-top-left-radius: 35%;
     right: 8%;
-    bottom: -9%;
+    bottom: -19%;
     z-index: 2;
 }
 
 .first-sect > .sectyy .second-pic {
     position: relative;
-    width: 82%;
-    left: 16%;
-    bottom: -13%
+    width: 85%;
+    left: 14%;
+    bottom: 39%;
+    z-index: 1;
+}
+
+.first-sect > .sectyy .third-pic {
+    display: none;
 }
 
 main > .section1 {
@@ -242,7 +246,6 @@ main >  .section1 .okay h5 {
 
 .section2 > .semi-section2 p {
     color: var(--Grey, #4B4B4B);
-    text-align: justify;
     font-family: 'Playfair Display';
     font-size: 1.5rem;
     font-style: normal;
@@ -469,10 +472,12 @@ main >  .section1 .okay h5 {
 
 .section5 > .tho {
     margin: 0 auto;
+    width: 5%;
 }
 
 .section5 > .tho img {
-    margin: auto;
+    width: 45%;
+    padding: 0 auto;
     gap: 0;
     justify-content: center;
     align-content: center;
@@ -519,92 +524,66 @@ footer > .p {
     line-height: 140%;
 }
 
-@media screen and (max-width: 1024px) {
-    nav {
-        display: none;
-    }
-
-    header > div .menuopen{
-        display: block;
-    }
-
-    header > div .menuopen.hide {
-        display: none;
-    }
-
-    header > div .menuclose.hide{
-        display: block;
-    }
-
-    header > div .nav2.visible {
-        display: flex;
-        flex-direction: column;
-        background: var(--Background, #F3F6F1);
-        gap: 72px;
-        height: 100vh;
-        /* margin: 0 7%; */
-    }
-
-    header > div .nav2.visible a {
-        text-decoration: none;
-        font-size: 18px;
-        margin-top: 48px;
-        color: #141414;
-        text-align: center;
-        font-family: 'Clash Grotesk';
-        font-size: 18px;
-        font-weight: 600;
-    }v fv eww
-
-    .first-sect > .sect {
-        width: 45%;
-        margin: 30% 7%;
+@media screen and (max-width: 1340px) {
+    .first-sect > .sectyy {
+        width: 40%;
     }
     
-    .first-sect > .sect h1 {
-        font-size: 2.70rem;
+    .first-sect > .sectyy .first-pic {
+        width: 100%;
+        right: 8%;
+        bottom: -23%;
+    }
+
+    .first-sect > .sectyy .second-pic {
+        left: 16%;
+        bottom: 38%;
     }
     
     .first-sect > .sect p {
-        font-size: 1.2rem;
-        font-weight: 400;
-        padding-bottom: 25px;
+        max-width: 73%;
+    }
+}
+
+@media screen and (max-width: 1095px) {
+    .first-sect > .sect {
+        width: 43%;
+    }
+    
+    .first-sect > .sect h1 {
+        font-size: 3rem;
+    }
+    
+    .first-sect > .sect p {
+        font-size: 1.3rem;
         max-width: 80%;
     }
     
-    .first-sect > .sect button {
-        padding: 12px 40px;
-        font-size: 1.375;
-        font-weight: 700;
+    .first-sect > .sectyy {
+        width: 43%;
     }
-
+    
     .first-sect > .sectyy .first-pic {
-        width: 25rem;
+        width: 90%;
         right: 8%;
-        bottom: 2.4%;
-        z-index: 2;
+        bottom: -23%;
     }
     
     .first-sect > .sectyy .second-pic {
-        width: 89%;
         left: 10%;
-        bottom: -20%
-    }
-
-    section {
-        height: 170vh;
+        bottom: 35%;
     }
 
     /* main > .section1 {
         padding: 0 8%;
     }
     
-    main > .section1 .lefty {
-        width: 1%;
+    .section1 .lefty {
+        width: 40%;
     }
     
-    main > .section1 .lefty image {
-        width: 2rem;
+    .section1 .lefty image {
+        width: 70%;
     }
     
     main > .section1 .righty {
@@ -619,6 +598,7 @@ footer > .p {
     }
     
     main >  .section1 .righty .nahh {
+        padding-bottom: 8%;
         gap: 32px;
     }
     
@@ -630,77 +610,288 @@ footer > .p {
         font-size: 1.75rem;
         font-weight: 700;
     } */
-
-    .section2 {
-        margin-top: 10%;
-        padding: 5% 8%;
+    
+    .section2 > .semi-section2 {
+        width: 50%;
     }
     
     .section2 > .semi-section2 h2 {
-        font-size: 2.70rem;
+        font-size: 2.65rem;
     }
     
     .section2 > .semi-section2 p {
-        font-size: 1.2rem;
+        font-size: 1.3rem;
+        max-width: 100%;
+    }
+    
+    .section2 > .semi-section3 {
+        width: 45%;
     }
     
     .section2 > .semi-section3 img {
-        width: 25rem;
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 981px) {
+    nav {
+        display: none;
     }
 
+    .menu-icon{
+        display: block;
+    }
+
+    .menu-icon.hide {
+        display: none;
+    }
+
+    .menu-icon-close.hide{
+        display: block;
+    }
+
+    .nav2.visible {
+        display: flex;
+        flex-direction: column;
+        background: var(--Background, #F3F6F1);
+        gap: 72px;
+        height: 100vh;
+        z-index: 55%;
+    }
+
+    .nav2.visible a {
+        text-decoration: none;
+        font-size: 18px;
+        margin-top: 48px;
+        color: #141414;
+        text-align: center;
+        font-family: 'Clash Grotesk';
+        font-size: 18px;
+        font-weight: 600;
+    }
+
+    .nav2 hr {
+        margin: 0 15%;
+    }
+
+    .first-sect > .sect {
+        margin-top: 35%;
+    }
+    
+    .first-sect > .sect h1 {
+        font-size: 2.60rem;
+        font-weight: 600;
+    }
+    
+    .first-sect > .sect p {
+        font-size: 1.1rem;
+        max-width: 80%;
+    }
+    
+    .first-sect > .sectyy .first-pic {
+        width: 95%;
+        bottom: -27%;
+    }
+    
+    .first-sect > .sectyy .second-pic {
+        bottom: 29%;
+    }
+
+    .section4 > .semi-section5 div h5 {
+        font-size: 1.70rem;
+    }
+}
+
+@media screen and (max-width: 851px) {
+    header > .iren {
+        position: fixed;
+        top: 0;
+        z-index: 4;
+        width: 100%;
+    }
+
+    section {
+        background-image: none;
+        background-color: var(--Ter, #F8FCFB);;
+        width: 100%;
+        height: 160vh;
+        margin-bottom: 7%;
+    }
+
+    .first-sect {
+        display: flex;
+        flex-direction: column;
+        padding: 0 4%;
+    }
+    
+    .first-sect > .sect {
+        width: 100%;
+        margin: 0;
+        padding: 0 4%;
+        padding-top: 25%;
+        padding-bottom: 20%;
+    }
+    
+    .first-sect > .sect h1 {
+        font-size: 3rem;
+        padding-bottom: 25px;
+    }
+    
+    .first-sect > .sect p {
+        font-size: 1.80rem;
+        max-width: 93%;
+    }
+    
+    .first-sect > .sectyy {
+        width: 70%;
+        margin: 0 auto;
+    }
+    
+    .first-sect > .sectyy .first-pic {
+        position: relative;
+        width: 100%;
+        right: 8%;
+        top: -50%;
+        z-index: 2;
+    }
+    
+    .first-sect > .sectyy .second-pic {
+        position: absolute;
+        width: 72%;
+        left: 18%;
+        bottom: -35%;
+        z-index: 1;
+    }
+
+    .first-sect > .sectyy .third-pic {
+        display: block;
+        width: 120%;
+        padding-top: 13%;
+    }
+    
+    main > .section1 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0 8%;
+        flex-direction: column;
+    }
+    
+    main > .section1 .lefty {
+        width: 50%;
+        margin: 0 auto;
+    }
+    
+    main > .section1 .lefty image {
+        width: 100%;
+    }
+    
+    main > .section1 .righty {
+        width: 100%;
+        padding-top: 10%;
+    }
+    
+    main >  .section1 .righty h2 {
+        padding-bottom: 13%;
+    }
+    
+    main >  .section1 .righty .nahh {
+        display: flex;
+        padding-bottom: 8%;
+        gap: 32px;
+    }
+    
+    main >  .section1 .righty .okay {
+        max-width: 100%;
+    }
+    
+    main >  .section1 .okay h5 {
+        font-size: 1.80rem;
+        padding-bottom: 20px;
+    }
+
+    main >  .section1 .okay p {
+        font-size: 1.3rem;
+    }
+    
+    .section2 {
+        margin-top: 10%;
+        padding: 5% 8%;
+        flex-direction: column;
+    }
+    
+    .section2 > .semi-section2 {
+        width: 100%;
+    }
+    
+    .section2 > .semi-section2 p {
+        font-size: 1.5rem;
+        font-weight: 400;
+        line-height: 140%;
+    }
+    
+    .section2 > .semi-section3 {
+        width: 70%;
+        padding-top: 10%;
+    }
+    
+    .section2 > .semi-section3 img {
+        width: 100%;
+    }
+    
     .section3 {
         padding: 10% 0;
     }
     
     .section3 > h2 {
-        font-size: 2.70rem;
-        font-weight: 700;
-        padding-bottom: 5%;
+        font-size: 2.75rem;
+    }
+    
+    .section3 > .semi-section4 {
+        display: flex;
+        justify-content: center;
+        align-content: center;
     }
     
     .section3 > .semi-section4 div {
-        width: 18%;
+        width: 17%;
     }
     
     .section3 > .semi-section4 div img {
-        width: 9rem;
+        width: 80%;
     }
     
     .section3 > .semi-section4 div p {
-        font-size: 1.5rem;
+        font-size: 1.1rem;
         font-weight: 600;
-        max-width: 12rem;
-    }
-
-    .section4 {
-        padding: 3% 0;
     }
     
-    .section4 h2 {
-        font-size: 2.60rem;
-        font-weight: 700;
-        padding: 5%;
+    .section4 {
+        padding: 3% 0;
+        background: var(--Sec, #DCE9E2);
+    }
+    
+    .section4 > .semi-section5 {
+        display: flex;
+        flex-direction: column;
     }
     
     .section4 > .semi-section5 div {
-        width: 29%;
+        width: 60%;
+        margin: 0 auto;
+        padding-bottom: 4%;
     }
     
     .section4 > .semi-section5 div img {
-        width: 18rem;
+        width: 90%;
         padding-left: 4%;
     }
     
     .section4 > .semi-section5 div h5 {
-        font-size: 1.50rem;
+        font-size: 2rem;
         font-weight: 700;
+        text-align: center;
         padding: 16px 0;
-    }
-    
-    .section4 > .semi-section5 div p {
-        font-size: 1.5rem;
-        max-width: 90%;
-        padding-left: 13%;
     }
     
     .section4 > .semi-section5 div .read {
@@ -708,47 +899,191 @@ footer > .p {
         font-weight: 700;
     }
     
-    .section4 > .btn button {
-        font-size: 1.5rem;
+    .section4 > .semi-section5 div .read:hover {
+        color: rgb(140, 136, 136);
+        transition: 0.25s;
     }
     
+    .section5 > .semi-section6 {
+        display: flex;
+        flex-direction: column;
+    }
+
     .section5 h2 {
-        font-size: 2.60rem;
+        font-size: 2.2rem;
+        font-weight: 600;
+        padding: 10%;
     }
     
     .section5 > .semi-section6 div {
-        width: 30%;
+        width: 60%;
+        margin: 0 auto;
     }
     
     .section5 > .semi-section6 div img {
-        width: 15rem;
+        width: 100%;
     }
     
     .section5 > .semi-section6 h5 {
-        font-size: 1.5rem;
+        font-size: 1.8rem;
         font-weight: 600;
-        padding-right: 20%;
+        line-height: 140%;
+        padding: 0;
+        padding-top: 24px;
+        margin: 0 auto;
     }
     
     .section5 > .semi-section6 h6 {
-        font-size: 1.125;
+        font-size: 1.125rem;
         font-weight: 600;
-        padding-right: 20%;
+        line-height: 140%;
+        padding: 0;
     }
     
     .section5 > .semi-section6 p {
         font-size: 1.25rem;
         font-weight: 400;
-        line-height: 140%;
-        padding-left: 6%;
-        max-width: 70%;
+        padding-top: 24px;
+        padding-bottom: 60px;
+        max-width: 100%;
     }
     
     .section5 > .tho {
         margin: 0 auto;
+        width: 5%;
     }
     
     .section5 > .tho img {
-        margin: auto;
+        width: 45%;
+        padding: 0 auto;
+        gap: 0;
+        justify-content: center;
+        align-content: center;
     }
 }
+
+@media screen and (max-width: 780px) {
+    .first-sect > .sectyy .first-pic {
+        position: relative;
+        width: 100%;
+        right: 8%;
+        top: -50%;
+    }
+    
+    .first-sect > .sectyy .second-pic {
+        position: absolute;
+        width: 69%;
+        bottom: -30%;
+    }
+
+    .first-sect > .sectyy .third-pic {
+        display: block;
+        width: 120%;
+        padding-top: 13%;
+        margin: 0;
+    }
+
+    .section5 > .tho {
+        margin: 0 auto;
+        width: 5%;
+    }
+    
+    .section5 > .tho img {
+        width: 25%;
+        padding: 0 auto;
+        gap: 0;
+        justify-content: center;
+        align-content: center;
+    }
+}
+
+@media screen and (max-width: 723px) {
+    .first-sect > .sectyy .second-pic {
+        position: absolute;
+        width: 69%;
+        bottom: -22%;
+    }
+}
+
+@media screen and (max-width: 665px) {
+    .first-sect > .sectyy .second-pic {
+        position: absolute;
+        width: 69%;
+        bottom: -14%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .section3 > h2 {
+        font-size: 2rem;
+    } 
+
+    .section3 > .semi-section4 div {
+        width: 19%;
+    }
+    
+    .section3 > .semi-section4 div img {
+        width: 70%;
+    }
+    
+    .section3 > .semi-section4 div p {
+        font-size: 1rem;
+        font-weight: 500;
+    }
+
+    .section2 > .semi-section2 p {
+        font-size: 1rem;
+        font-weight: 400;
+        line-height: 140%;
+    }
+}
+
+@media screen and (max-width: 588px) {
+    .first-sect > .sectyy .second-pic {
+        position: absolute;
+        width: 69%;
+        bottom: -6%;
+    }
+
+    section {
+        width: 100%;
+        height: 140vh;
+    }
+}
+
+@media screen and (max-width: 498px) {
+    .first-sect > .sect h1 {
+        font-size: 2.45rem;
+        padding-bottom: 25px;
+    }
+    
+    .first-sect > .sect p {
+        font-size: 1.25rem;
+        max-width: 93%;
+    }
+
+    .first-sect > .sect button {
+        font-size: 1rem;
+        font-weight: 600;
+    }
+
+    .first-sect > .sectyy .second-pic {
+        position: absolute;
+        width: 69%;
+        bottom: 12%;
+    }
+
+    .section3 > .semi-section4 {
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        flex-wrap: wrap;
+        /* flex-direction: column; */
+    }
+
+    .section3 > .semi-section4 div {
+        width: 18%;
+        /* margin: 0 auto; */
+    }
+}
+

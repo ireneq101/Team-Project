@@ -1,5 +1,5 @@
-const hamburger = document.querySelector('.menuopen')
-const close = document.querySelector('.menuclose')
+const hamburger = document.querySelector('.menu-icon')
+const close = document.querySelector('.menu-icon-close')
 const nav2 = document.querySelector('.nav2')
 
 hamburger.addEventListener('click', ()=> {

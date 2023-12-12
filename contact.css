@@ -12,17 +12,18 @@ body {
 
 header > .ire {
     display: flex;
+    justify-content: center;
     align-content: center;
     justify-content: space-between;
-    padding: 2% 4%;
+    padding: 2% 7%;
     background: var(--Ter, #F8FCFB);
     position: fixed;
-    top: 0;
     z-index: 4;
+    top: 0;
     width: 100%;
 }
 
-header > .ire nav a {
+header > .ire > nav a {
     color: var(--Mid-grey, #AFAFAF);
     font-family: 'Playfair Display';
     font-size: 1.5rem;
@@ -33,6 +34,7 @@ header > .ire nav a {
     padding: 12px 20px;
     justify-content: center;
     align-items: center;
+    width: 50%;
 }
 
 header > .ire nav a:hover {
