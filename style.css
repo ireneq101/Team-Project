@@ -650,7 +650,7 @@ footer > .p {
         display: block;
     }
 
-    .nav2.visible {
+    header > .nav2.visible {
         display: flex;
         flex-direction: column;
         background: var(--Background, #F3F6F1);
@@ -659,7 +659,7 @@ footer > .p {
         z-index: 55%;
     }
 
-    header > .iren > .nav2.visible a {
+    header > .nav2.visible a {
         color: var(--Mid-grey, #AFAFAF);
         font-family: 'Playfair Display';
         font-size: 1.5rem;
@@ -672,14 +672,14 @@ footer > .p {
         align-items: center;
     }
     
-    header > .iren > .nav2.visible a:hover {
+    header > .nav2.visible a:hover {
         transition: 0.25s;
         border-radius: 100px;
         background: var(--Pry, #005C4D);
         color: white;
     }
     
-    header > .iren nav .home {
+    header > .nav2 .home {
         color: var(--Pry, #005C4D);
         font-family: 'Playfair Display';
         font-size: 1.5rem;
@@ -687,7 +687,7 @@ footer > .p {
         line-height: 140%;
     }
     
-    header > .iren nav button {
+    header > .nav2 button {
         padding: 12px 40px;
         color: var(--White, #FFF);
         font-family: 'Playfair Display';
@@ -699,7 +699,7 @@ footer > .p {
         background: var(--Pry, #005C4D);
     }
     
-    header > .iren nav button:hover {
+    header > .nav2 button:hover {
         border-radius: 100px;
         background-color: var(--White, #FFF);
         color: var(--Pry, #005C4D);
