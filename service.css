@@ -67,20 +67,21 @@ header > .iren button:hover {
     transition: 0.25s;
 }
 
-
-/* .nav2 a {
-    text-decoration: none;
-    color: var(--Mid-grey, #AFAFAF);
-    font-family: 'Playfair Display';
-    font-size: 24px;
-    font-style: normal;
-    font-weight: 600;
-    line-height: 140%;
-    gap: 54px;
+.menu-icon {
     display: none;
-} */
+    cursor: pointer;
+}
 
-section {
+.menu-icon-close {
+    display: none;
+    cursor: pointer;
+}
+
+.nav2 {
+    display: none;
+}
+
+.section1 {
     background-image: url(Hero.png);
     background-repeat: no-repeat;
     background-position: center;
@@ -90,7 +91,7 @@ section {
     height: 115vh;
 }
 
-section h1 {
+.section1 h1 {
     justify-content: center;
     text-align: center;
     padding: 25% 0;
@@ -144,11 +145,11 @@ section h1 {
 }
 
 .section2 > .image1 {
-    width: 45%;
+    width: 40%;
 }
 
 .section2 > .image1 img {
-    width: 30rem;
+    width: 80%;
     margin-left: 20%;
     border-bottom-left-radius: 35%;
     border-bottom-right-radius: 35%;
@@ -156,7 +157,7 @@ section h1 {
 }
 
 .medical {
-    width: 35%;
+    width: 40%;
     justify-content: center;
     align-content: center;
 }
@@ -185,19 +186,18 @@ section h1 {
     display: flex;
     justify-content: center;
     align-items: center;
-    /* gap: 32px; */
     padding: 40px 0;
     margin-bottom: 40px;
     background: var(--Light-grey, #FAFAFA);
 }
 
 .section3 > .image2 {
-    width: 45%;
+    width: 40%;
     margin-right: 8%;
 }
 
 .section3 > .image2 img {
-    width: 30rem;
+    width: 80%;
     margin-left: 20%;
     border-bottom-left-radius: 35%;
     border-bottom-right-radius: 35%;
@@ -205,7 +205,7 @@ section h1 {
 }
 
 .section3 > .health {
-    width: 35%;
+    width: 40%;
     margin-left: 15%;
     /* padding-left: 16%; */
     justify-content: center;
@@ -242,11 +242,11 @@ section h1 {
 }
 
 .section4 > .image3 {
-    width: 45%;
+    width: 40%;
 }
 
 .section4 > .image3 img {
-    width: 30rem;
+    width: 80%;
     margin-left: 20%;
     border-bottom-left-radius: 35%;
     border-bottom-right-radius: 35%;
@@ -254,7 +254,7 @@ section h1 {
 }
 
 .section4 > .mach {
-    width: 35%;
+    width: 40%;
     /* padding-left: 26%; */
     justify-content: center;
     align-content: center;
@@ -284,19 +284,19 @@ section h1 {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 32px;
+    gap: 10px;
     padding: 40px 0;
     margin-bottom: 40px;
     background: var(--Light-grey, #FAFAFA);
 }
 
 .section5 > .image4 {
-    width: 45%;
+    width: 40%;
     margin-right: 8%;
 }
 
 .section5 > .image4 img {
-    width: 30rem;
+    width: 80%;
     margin-left: 20%;
     border-bottom-left-radius: 35%;
     border-bottom-right-radius: 35%;
@@ -304,7 +304,7 @@ section h1 {
 }
 
 .section5 > .tele {
-    width: 35%;
+    width: 40%;
     margin-left: 15%;
     justify-content: center;
     align-content: center;
@@ -340,11 +340,11 @@ section h1 {
 }
 
 .section6 > .image5 {
-    width: 45%;
+    width: 40%;
 }
 
 .section6 > .image5 img {
-    width: 30rem;
+    width: 80%;
     margin-left: 20%;
     border-bottom-left-radius: 35%;
     border-bottom-right-radius: 35%;
@@ -352,7 +352,7 @@ section h1 {
 }
 
 .section6 > .manage {
-    width: 35%;
+    width: 40%;
     /* padding-left: 26%; */
     justify-content: center;
     align-content: center;
@@ -382,19 +382,19 @@ section h1 {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 32px;
+    gap: 10px;
     padding: 40px 0;
     margin-bottom: 40px;
     background: var(--Light-grey, #FAFAFA);
 }
 
 .section7 > .image6 {
-    width: 45%;
+    width: 40%;
     margin-right: 8%;
 }
 
 .section7 > .image6 img {
-    width: 30rem;
+    width: 80%;
     margin-left: 20%;
     border-bottom-left-radius: 35%;
     border-bottom-right-radius: 35%;
@@ -402,7 +402,7 @@ section h1 {
 }
 
 .section7 > .info {
-    width: 35%;
+    width: 40%;
     margin-left: 15%;
     justify-content: center;
     align-content: center;
@@ -471,4 +471,435 @@ footer > .p {
     font-style: normal;
     font-weight: 700;
     line-height: 140%;
+}
+
+@media screen and (max-width: 1440px) {
+    .section1 {
+        margin: 0;
+        width: 100%;
+        height: 80vh;
+    }
+}
+
+@media screen and (max-width: 981px) {
+    nav {
+        display: none;
+    }
+
+    .menu-icon{
+        display: block;
+    }
+
+    .menu-icon.hide {
+        display: none;
+    }
+
+    .menu-icon-close.hide{
+        display: block;
+    }
+
+    header > .nav2.visible {
+        display: flex;
+        flex-direction: column;
+        background: var(--Ter, #F8FCFB);
+        gap: 72px;
+        z-index: 7%;
+        padding: 10%;
+    }
+
+    header > .nav2.visible a {
+        color: var(--Mid-grey, #AFAFAF);
+        font-family: 'Playfair Display';
+        font-size: 1.5rem;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 140%;
+        text-decoration: none;
+        padding: 12px 20px;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    header > .nav2.visible a:hover {
+        transition: 0.25s;
+        border-radius: 100px;
+        background: var(--Pry, #005C4D);
+        color: white;
+    }
+    
+    header > .nav2 .home {
+        color: var(--Pry, #005C4D);
+        font-family: 'Playfair Display';
+        font-size: 1.5rem;
+        font-weight: 600;
+        line-height: 140%;
+    }
+    
+    header > .nav2 button {
+        padding: 12px 40px;
+        color: var(--White, #FFF);
+        font-family: 'Playfair Display';
+        font-size: 1.375rem;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 140%;
+        border-radius: 100px;
+        background: var(--Pry, #005C4D);
+    }
+    
+    header > .nav2 button:hover {
+        border-radius: 100px;
+        background-color: var(--White, #FFF);
+        color: var(--Pry, #005C4D);
+        transition: 0.25s;
+    }
+
+    .section1 h1 {
+        text-align: center;
+        padding: 33% 0;
+        font-size: 4rem;
+    }
+    
+    .main > .oops {
+        width: 60%;
+        margin: 0 auto;
+    }
+    
+    .main > .oops p {
+        text-align: center;
+        font-size: 1.45rem;
+        font-weight: 400;
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 851px) {
+    .main h2 {
+        font-size: 2.75rem;
+        font-weight: 700;
+        padding-bottom: 32px;
+    }
+
+    section > div {
+        width: 100%;
+        gap: 20px;
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        flex-direction: column;
+    }
+
+    .section2 {
+        flex-direction: column-reverse;
+        gap: 20px;
+    }
+    
+    .section2 > .image1 {
+        width: 57%;
+    }
+    
+    .section2 > .image1 img {
+        width: 100%;
+        margin: 0;
+    }
+    
+    .medical {
+        width: 90%;
+        padding: 4%;
+    }
+    
+    .medical h5 {
+        text-align: center;
+    }
+    
+    .medical p {
+        text-align: center;
+        font-size: 1.45rem;
+        max-width: 100%;
+        word-break: keep-all;
+    }
+
+    .section3 {
+        background: var(--Light-grey, #FAFAFA);
+    }
+    
+    .section3 > .image2 {
+        width: 57%;
+        margin: 0 0 0 0;
+    }
+    
+    .section3 > .image2 img {
+        width: 100%;
+        margin-left: 0;
+    }
+    
+    .section3 > .health {
+        width: 90%;
+        margin-left: 0;
+        padding: 4%;
+    }
+    
+    .section3 > .health h5{
+        text-align: center;
+    }
+    
+    .section3 > .health p {
+        text-align: center;
+        font-size: 1.45rem;
+        max-width: 100%;
+        word-break: keep-all;
+    }
+
+    .section4 {
+        flex-direction: column-reverse;
+        gap: 20px;
+    }
+
+    .section4 > .image3 {
+        width: 57%;
+    }
+    
+    .section4 > .image3 img {
+        width: 100%;
+        margin: 0;
+    }
+    
+    .section4 > .mach {
+        width: 90%;
+        padding: 4%;
+    }
+    
+    .section4 > .mach h5 {
+        text-align: center;
+    }
+    
+    .section4 > .mach p {
+        text-align: center;
+        font-size: 1.45rem;
+        max-width: 100%;
+        word-break: keep-all;
+    }
+    
+    .section5 {
+        background: var(--Light-grey, #FAFAFA);
+    }
+    
+    .section5 > .image4 {
+        width: 57%;
+        margin: 0 0 0 0;
+    }
+    
+    .section5 > .image4 img {
+        width: 100%;
+        margin-left: 0;
+    }
+    
+    .section5 > .tele {
+        width: 90%;
+        margin-left: 0;
+        padding: 4%;
+    }
+    
+    .section5 > .tele h5{
+        text-align: center;
+    }
+    
+    .section5 > .tele p {
+        text-align: center;
+        font-size: 1.45rem;
+        max-width: 100%;
+        word-break: keep-all;
+    }
+
+    .section6 {
+        flex-direction: column-reverse;
+        gap: 20px;
+    }
+
+    .section6 > .image5 {
+        width: 57%;
+    }
+    
+    .section6 > .image5 img {
+        width: 100%;
+        margin: 0;
+    }
+    
+    .section6 > .manage {
+        width: 90%;
+        padding: 4%;
+    }
+    
+    .section6 > .manage h5 {
+        text-align: center;
+    }
+    
+    .section6 > .manage p {
+        text-align: center;
+        font-size: 1.45rem;
+        max-width: 100%;
+        word-break: keep-all;
+    }
+
+    .section7 {
+        background: var(--Light-grey, #FAFAFA);
+    }
+    
+    .section7 > .image6 {
+        width: 57%;
+        margin: 0 0 0 0;
+    }
+    
+    .section7 > .image6 img {
+        width: 100%;
+        margin-left: 0;
+    }
+    
+    .section7 > .info {
+        width: 90%;
+        margin-left: 0;
+        padding: 4%;
+    }
+    
+    .section7 > .info h5{
+        text-align: center;
+    }
+    
+    .section7 > .info p {
+        text-align: center;
+        font-size: 1.45rem;
+        max-width: 100%;
+        word-break: keep-all;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .section1 h1 {
+        text-align: center;
+        padding: 45% 0;
+        font-size: 4rem;
+    }
+
+    .main h2 {
+        font-size: 2.5rem;
+        font-weight: 700;
+        padding-bottom: 32px;
+    }
+
+    .main > .oops {
+        width: 70%;
+        margin: 0 auto;
+    }
+}
+
+@media screen and (max-width: 488px) {
+    .section1 h1 {
+        text-align: center;
+        padding: 65% 0;
+        font-size: 3.75rem;
+        font-weight: 700;
+    }
+
+    .main h2 {
+        font-size: 2.2rem;
+        font-weight: 700;
+        padding-bottom: 32px;
+    }
+
+    .main > .oops {
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    .section2 > .medical p {
+        font-size: 1.2rem;
+    }
+
+    .section2 > .medical h5 {
+        font-size: 1.75rem;
+    }
+
+    .section3 > .health p {
+        font-size: 1.2rem;
+    }
+
+    .section3 > .health h5 {
+        font-size: 1.75rem;
+    }
+
+    .section4 > .mach p {
+        font-size: 1.2rem;
+    }
+
+    .section4 > .mach h5 {
+        font-size: 1.75rem;
+    }
+
+    .section5 > .tele p {
+        font-size: 1.2rem;
+    }
+
+    .section5 > .tele h5 {
+        font-size: 1.75rem;
+    }
+
+    .section6 > .manage p {
+        font-size: 1.2rem;
+    }
+
+    .section6 > .manage h5 {
+        font-size: 1.75rem;
+    }
+
+    .section7 > .info p {
+        font-size: 1.2rem;
+    }
+
+    .section7 > .info h5 {
+        font-size: 1.75rem;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .section1 h1 {
+        text-align: center;
+        padding: 85% 0;
+        font-size: 2.75rem;
+        font-weight: 700;
+    }
+
+    .main h2 {
+        font-size: 2rem;
+        font-weight: 700;
+        padding-bottom: 32px;
+    }
+
+    .main > .oops {
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    .section2 > .medical p {
+        font-size: 1rem;
+    }
+
+    .section3 > .health p {
+        font-size: 1rem;
+    }
+
+    .section4 > .mach p {
+        font-size: 1rem;
+    }
+
+    .section5 > .tele p {
+        font-size: 1rem;
+    }
+
+    .section6 > .manage p {
+        font-size: 1rem;
+    }
+
+    .section7 > .info p {
+        font-size: 1rem;
+    }
 }

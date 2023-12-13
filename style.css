@@ -727,6 +727,7 @@ footer > .p {
     
     .first-sect > .sectyy .second-pic {
         bottom: 29%;
+        display: none;
     }
 
     .section4 > .semi-section5 div h5 {
@@ -820,11 +821,12 @@ footer > .p {
     
     main > .section1 .righty {
         width: 100%;
+        padding-left: 0;
         padding-top: 10%;
     }
     
     main >  .section1 .righty h2 {
-        padding-bottom: 13%;
+        padding-bottom: 10%;
     }
     
     main >  .section1 .righty .nahh {
@@ -839,11 +841,12 @@ footer > .p {
     
     main >  .section1 .okay h5 {
         font-size: 1.80rem;
-        padding-bottom: 20px;
+        padding-bottom: 15px;
     }
 
     main >  .section1 .okay p {
         font-size: 1.3rem;
+        max-width: 100%;
     }
     
     .section2 {
@@ -1043,9 +1046,56 @@ footer > .p {
         width: 69%;
         bottom: -14%;
     }
+
+    /* main > .section1 {
+        width: 100%;
+    }
+
+    main > .section1 > .righty {
+        width: 100%;
+        padding-top: 10%;
+    } */
+    
+    /* main > .section1 .righty {
+        width: 100%;
+        padding-left: 0;
+    } */
+    
+    /* main >  .section1 .righty .okay {
+        max-width: 100%;
+    }
+    
+    main >  .section1 .okay h5 {
+        font-size: 1.80rem;
+        padding-bottom: 20px;
+    }
+
+    main >  .section1 .okay p {
+        font-size: 1.3rem;
+    } */
 }
 
 @media screen and (max-width: 600px) {
+    main >  .section1 .righty h2 {
+        font-size: 3rem;
+    }
+
+    main >  .section1 > .righty > .nahh {
+        width: 100%;
+    }
+
+    main >  .section1 > .righty > .nahh img {
+        width: 100%;
+    }
+
+    main >  .section1 .okay h5 {
+        font-size: 1.2rem;
+        padding-bottom: 10px;
+    }
+
+    main >  .section1 .okay p {
+        font-size: 1rem;
+    }
     .section3 > h2 {
         font-size: 2rem;
     } 
@@ -1223,5 +1273,14 @@ footer > .p {
         position: absolute;
         width: 69%;
         bottom: 35%;
+    }
+
+    main >  .section1 .righty h2 {
+        font-size: 2rem;
+    }
+
+    .section2 > .semi-section2 h2 {
+        font-size: 2rem;
+        font-weight: 700;
     }
 }
