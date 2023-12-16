@@ -727,7 +727,6 @@ footer > .p {
     
     .first-sect > .sectyy .second-pic {
         bottom: 29%;
-        display: none;
     }
 
     .section4 > .semi-section5 div h5 {
@@ -794,6 +793,7 @@ footer > .p {
         left: 18%;
         bottom: -35%;
         z-index: 1;
+        display: none;
     }
 
     .first-sect > .sectyy .third-pic {
