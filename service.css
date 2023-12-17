@@ -488,6 +488,7 @@ footer > .p {
 
     .menu-icon{
         display: block;
+        width: 100%;
     }
 
     .menu-icon.hide {
@@ -496,6 +497,7 @@ footer > .p {
 
     .menu-icon-close.hide{
         display: block;
+        width: 100%;
     }
 
     header > .nav2.visible {
