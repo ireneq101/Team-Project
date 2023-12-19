@@ -576,6 +576,10 @@ footer > .p {
 }
 
 @media screen and (max-width: 851px) {
+    header > .iren > .left img {
+        width: 80%;
+    }
+
     .main h2 {
         font-size: 2.75rem;
         font-weight: 700;

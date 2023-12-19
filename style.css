@@ -629,6 +629,7 @@ footer > .p {
     .menu-icon{
         display: block;
         width: 100%;
+        padding-top: 7%;
     }
 
     .menu-icon.hide {
@@ -638,6 +639,7 @@ footer > .p {
     .menu-icon-close.hide{
         display: block;
         width: 100%;
+        padding-top: 7%;
     }
 
     header > .nav2.visible {
@@ -1062,6 +1064,9 @@ footer > .p {
 }
 
 @media screen and (max-width: 600px) {
+    header > .iren > .logo img {
+        width: 80%;
+    }
     main >  .section1 .righty h2 {
         padding-bottom: 10%;
         font-size: 2.5rem;
