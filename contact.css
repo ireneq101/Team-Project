@@ -136,6 +136,7 @@ section > .duddy .grey p {
     font-weight: 400;
     line-height: 140%;
     max-width: 85%;
+    padding-bottom: 10%;
 }
 
 section > .section1 {
@@ -414,6 +415,10 @@ footer > .p {
 }
 
 @media screen and (max-width: 730px) {
+    section > .duddy h2 {
+        font-size: 40px;
+    }
+
     section > .section1 >.icons {
         width: 100%;
         flex-wrap: wrap;
@@ -477,6 +482,9 @@ footer > .p {
 }
 
 @media screen and (max-width: 485px) {
+    section > .duddy h2 {
+        font-size: 35px;
+    }
     .section2 > .gogo p {
         font-size: 1.1rem;
         font-weight: 600;
@@ -512,6 +520,9 @@ footer > .p {
 }
 
 @media screen and (max-width: 376px) {
+    section > .duddy h2 {
+        font-size: 30px;
+    }
     section > .irene h1 {
         text-align: center;
         padding: 80% 0;
