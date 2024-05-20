@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
 * {
     padding: 0;
     margin: 0;
@@ -6,7 +8,6 @@
 
 body {
     width: 100%;
-    max-width: 1540%;
     margin: 0 auto;
     background-color: white;
 }
@@ -22,6 +23,15 @@ header > .iren {
     z-index: 4;
     width: 100%;
 }
+
+header > .iren > .logo {
+    width: 18%;
+}
+
+header > .iren > .logo img {
+    width: 100%;
+}
+
 
 header > .iren > nav a {
     color: var(--Mid-grey, #AFAFAF);
@@ -52,7 +62,7 @@ header > .iren nav .home {
 }
 
 header > .iren nav button {
-    padding: 12px 40px;
+    padding: 1rem 3rem;
     color: var(--White, #FFF);
     font-family: 'Playfair Display';
     font-size: 1.375rem;
@@ -87,23 +97,25 @@ header > .iren nav button:hover {
 section {
     background-image: url(hero1.png);
     background-repeat: no-repeat;
+    background-position: center;
     width: 100%;
-    height: 150vh;
+    height: 120vh;
+    margin-bottom: 10%;
 }
 
-.first-sect {
+section > .first-sect {
     display: flex;
     /* justify-content: space-between; */
     /* gap: 80px; */
 }
 
-.first-sect > .sect {
+section > .first-sect > .sect {
     width: 45%;
     justify-content: center;
-    margin: 24% 7%;
+    margin: 20% 7%;
 }
 
-.first-sect > .sect h1 {
+section > .first-sect > .sect h1 {
     color: var(--Pry, #005C4D);
     font-family: 'Playfair Display';
     font-size: 3.5rem;
@@ -113,10 +125,10 @@ section {
     padding-bottom: 25px;
 }
 
-.first-sect > .sect p {
+section > .first-sect > .sect p {
     color: var(--Black, #171717);
     font-family: 'Playfair Display';
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     font-style: normal;
     font-weight: 400;
     line-height: 140%;
@@ -124,8 +136,8 @@ section {
     max-width: 65%;
 }
 
-.first-sect > .sect button {
-    padding: 12px 40px;
+section > .first-sect > .sect button {
+    padding: 1rem 3rem;
     color: var(--White, #FFF);
     font-family: 'Playfair Display';
     font-size: 1.375rem;
@@ -136,37 +148,37 @@ section {
     background: var(--Pry, #005C4D);
 }
 
-.first-sect > .sect button:hover {
+section > .first-sect > .sect button:hover {
     border-radius: 100px;
     background-color: var(--White, #FFF);
     color: var(--Pry, #005C4D);
     transition: 0.25s;
 }
 
-.first-sect > .sectyy {
+section > .first-sect > .sectyy {
     width: 45%;
 }
 
-.first-sect > .sectyy .first-pic {
+section > .first-sect > .sectyy .first-pic {
     position: relative;
-    width: 90%;
+    width: 82%;
     border-bottom-left-radius: 35%;
     border-bottom-right-radius: 35%;
     border-top-left-radius: 35%;
     right: 8%;
-    bottom: -19%;
+    bottom: -21%;
     z-index: 2;
 }
 
-.first-sect > .sectyy .second-pic {
+section > .first-sect > .sectyy .second-pic {
     position: relative;
-    width: 85%;
-    left: 14%;
-    bottom: 39%;
+    width: 83%;
+    left: 16%;
+    bottom: 36%;
     z-index: 1;
 }
 
-.first-sect > .sectyy .third-pic {
+section > .first-sect > .sectyy .third-pic {
     display: none;
 }
 
@@ -178,20 +190,20 @@ main > .section1 {
     padding: 0 8%;
 }
 
-main > .section1 .lefty {
+main > .section1 > .lefty {
     width: 45%;
 }
 
-main > .section1 .lefty img {
+main > .section1 > .lefty img {
     width: 100%;
 }
 
-main > .section1 .righty {
+main > .section1 > .righty {
     width: 50%;
-    max-width: 40%;
+    max-width: 45%;
 }
 
-main >  .section1 .righty h2 {
+main >  .section1 > .righty h2 {
     color: var(--Pry, #005C4D);
     font-family: 'Playfair Display';
     font-size: 3.70rem;
@@ -201,13 +213,18 @@ main >  .section1 .righty h2 {
     padding-bottom: 8%;
 }
 
-main >  .section1 .righty .nahh {
+main >  .section1 > .righty .nahh {
     display: flex;
     padding-bottom: 8%;
     gap: 32px;
+    width: 100%;
 }
 
-main >  .section1 .okay h5 {
+main >  .section1 > .righty .nahh img {
+    width: 20%;
+}
+
+main > .section1 > .righty .okay h5 {
     color: var(--Black, #171717);
     font-family: 'Playfair Display';
     font-size: 1.75rem;
@@ -216,7 +233,16 @@ main >  .section1 .okay h5 {
     line-height: normal;
 }
 
-.section2 {
+main > .section1 > .righty .okay p {
+    color: var(--Grey, #4B4B4B);
+    font-family: "Playfair Display";
+    font-size: 1.2rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%;
+}
+
+main > .section2 {
     display: flex;
     justify-content: center;
     justify-content: space-between;
@@ -226,11 +252,11 @@ main >  .section1 .okay h5 {
     padding: 5% 8%;
 }
 
-.section2 > .semi-section2 {
+main > .section2 > .semi-section2 {
     width: 50%;
 }
 
-.section2 > .semi-section2 h2 {
+main > .section2 > .semi-section2 h2 {
     color: var(--Pry, #005C4D);
     font-family: 'Playfair Display';
     font-size: 2.75rem;
@@ -240,7 +266,7 @@ main >  .section1 .okay h5 {
     padding-bottom: 32px;
 }
 
-.section2 > .semi-section2 p {
+main > .section2 > .semi-section2 p {
     color: var(--Grey, #4B4B4B);
     font-family: 'Playfair Display';
     font-size: 1.5rem;
@@ -249,19 +275,20 @@ main >  .section1 .okay h5 {
     line-height: 140%;
 }
 
-.section2 > .semi-section3 {
+main > .section2 > .semi-section3 {
     width: 45%;
 }
 
-.section2 > .semi-section3 img {
+main > .section2 > .semi-section3 img {
     width: 100%;
 }
 
-.section3 {
+main > .section3 {
     padding: 10% 0;
+    width: 100%;
 }
 
-.section3 > h2 {
+main > .section3 > h2 {
     text-align: center;
     color: var(--Pry, #005C4D);
     font-family: 'Playfair Display';
@@ -272,21 +299,22 @@ main >  .section1 .okay h5 {
     padding-bottom: 5%;
 }
 
-.section3 > .semi-section4 {
+main > .section3 > .semi-section4 {
     display: flex;
     justify-content: center;
     align-content: center;
+    width: 100%;
 }
 
-.section3 > .semi-section4 div {
-    width: 17%;
+main > .section3 > .semi-section4 > div {
+    width: 20%;
 }
 
-.section3 > .semi-section4 div img {
+main > .section3 > .semi-section4 > div img {
     width: 80%;
 }
 
-.section3 > .semi-section4 div p {
+main > .section3 > .semi-section4 > div p {
     color: var(--Pry, #005C4D);
     text-align: center;
     font-family: 'Playfair Display';
@@ -294,15 +322,16 @@ main >  .section1 .okay h5 {
     font-style: normal;
     font-weight: 600;
     line-height: 140%;
-    max-width: 12rem;
+    max-width: 90%;
 }
 
-.section4 {
+main > .section4 {
     padding: 3% 0;
     background: var(--Sec, #DCE9E2);
+    width: 100%;
 }
 
-.section4 h2 {
+main > .section4 h2 {
     text-align: center;
     color: var(--Pry, #005C4D);
     font-family: 'Playfair Display';
@@ -313,22 +342,34 @@ main >  .section1 .okay h5 {
     padding: 5%;
 }
 
-.section4 > .semi-section5 {
-    display: flex;
+main > .section4 > .semi-section5 {
+    display: grid;
+    grid-template-columns: auto auto auto;
     justify-content: center;
     align-content: center;
-}
-
-.section4 > .semi-section5 div {
-    width: 29%;
-}
-
-.section4 > .semi-section5 div img {
     width: 100%;
-    padding-left: 10%;
 }
 
-.section4 > .semi-section5 div h5 {
+main > .section4 > .semi-section5 > div {
+    width: 75%;
+    text-align: center;
+    margin: 0 auto;
+}
+
+main > .section4 > .semi-section5 > div:nth-child(2) {
+    width: 94%;
+}
+
+main > .section4 > .semi-section5 > div:last-child {
+    width: 80%;
+}
+
+main > .section4 > .semi-section5 > div img {
+    width: 100%;
+    text-align: center;
+}
+
+main > .section4 > .semi-section5 > div h5 {
     color: var(--Black, #171717);
     font-family: 'Playfair Display';
     font-size: 2rem;
@@ -339,7 +380,7 @@ main >  .section1 .okay h5 {
     padding: 16px 0;
 }
 
-.section4 > .semi-section5 div p {
+main > .section4 > .semi-section5 > div p {
     color: var(--Grey, #4B4B4B);
     text-align: center;
     font-family: 'Playfair Display';
@@ -347,12 +388,13 @@ main >  .section1 .okay h5 {
     font-style: normal;
     font-weight: 400;
     line-height: 140%;
-    max-width: 82%;
-    padding-left: 23%;
     padding-bottom: 16px;
+    max-width: 85%;
+    text-wrap: wrap;
+    margin: 0 auto;
 }
 
-.section4 > .semi-section5 div .read {
+main > .section4 > .semi-section5 > div .read {
     color: var(--Pry, #005C4D);
     text-align: center;
     font-family: 'Playfair Display';
@@ -362,26 +404,26 @@ main >  .section1 .okay h5 {
     line-height: 140%;
 }
 
-.section4 > .semi-section5 div .read:hover {
+main > .section4 > .semi-section5 > div .read:hover {
     /* border-radius: 5px; */
     /* background-color: var(--White, #FFF); */
     color: rgb(140, 136, 136);
     transition: 0.25s;
 }
 
-.section4 > .btn {
+main > .section4 > .btn {
     display: flex;
     margin-top: 5%;
 }
 
-.section4 > .btn button {
+main > .section4 > .btn button {
     color: var(--White, #FFF);
     font-family: 'Playfair Display';
     font-size: 1.375rem;
     font-style: normal;
     font-weight: 700;
     display: inline-flex;
-    padding: 12px 40px;
+    padding: 1rem 3rem;
     justify-content: center;
     align-items: center;
     gap: 10px;
@@ -390,19 +432,20 @@ main >  .section1 .okay h5 {
     margin: 0 auto;
 }
 
-.section4 > .btn button:hover {
+main > .section4 > .btn button:hover {
     border-radius: 100px;
     background-color: var(--White, #FFF);
     color: var(--Pry, #005C4D);
     transition: 0.25s;
 }
 
-.section5 {
-    padding-left: 6%;
-    margin: 5% 0;
+main > .section5 {
+    /* padding-left: 6%; */
+    margin: 5% auto;
+    width: 100%;
 }
 
-.section5 h2 {
+main > .section5 h2 {
     text-align: center;
     color: var(--Pry, #005C4D);
     font-family: 'Playfair Display';
@@ -413,23 +456,27 @@ main >  .section1 .okay h5 {
     padding: 5%;
 }
 
-.section5 > .semi-section6 {
-    display: flex;
+main > .section5 > .semi-section6 {
+    display: grid;
+    grid-template-columns: auto auto auto;
     justify-content: center;
     align-content: center;
+    width: 100%;
+    gap: 0;
 }
 
-.section5 > .semi-section6 div {
-    width: 30%;
+main > .section5 > .semi-section6 > div {
+    width: 60%;
+    text-align: center;
+    margin: 0 auto;
 }
 
-.section5 > .semi-section6 div img {
-    width: 75%;
-    /* padding-left: 5%; */
-    /* padding-right: 4%; */
+main > .section5 > .semi-section6 > div img {
+    width: 100%;
+    text-align: center;
 }
 
-.section5 > .semi-section6 h5 {
+main > .section5 > .semi-section6 > div h5 {
     color: var(--Black, #171717);
     text-align: center;
     font-family: 'Playfair Display';
@@ -437,22 +484,20 @@ main >  .section1 .okay h5 {
     font-style: normal;
     font-weight: 600;
     line-height: 140%;
-    padding-right: 20%;
     padding-top: 24px;
 }
 
-.section5 > .semi-section6 h6 {
+main > .section5 > .semi-section6 > div h6 {
     color: var(--Pry, #005C4D);
     text-align: center;
     font-family: 'Playfair Display';
-    font-size: 1.125;
+    font-size: 1rem;
     font-style: normal;
     font-weight: 600;
     line-height: 140%;
-    padding-right: 20%;
 }
 
-.section5 > .semi-section6 p {
+main > .section5 > .semi-section6 > div p {
     color: var(--Grey, #4B4B4B);
     text-align: center;
     font-family: 'Playfair Display';
@@ -460,18 +505,18 @@ main >  .section1 .okay h5 {
     font-style: normal;
     font-weight: 400;
     line-height: 140%;
-    text-align: center;
-    padding-left: 6%;
     padding-top: 24px;
-    max-width: 70%;
+    max-width: 90%;
+    text-wrap: wrap;
+    margin: 0 auto;
 }
 
-.section5 > .tho {
-    margin: 20% auto;
+main > .section5 > .tho {
+    margin: 13% auto;
     width: 5%;
 }
 
-.section5 > .tho img {
+main > .section5 > .tho img {
     width: 45%;
     padding: 0 auto;
     gap: 0;
@@ -480,6 +525,7 @@ main >  .section1 .okay h5 {
 }
 
 footer {
+    width: 100%;
     background-color: var(--Pry, #005C4D);
     display: flex;
     justify-content: center;
@@ -488,6 +534,15 @@ footer {
     color: white;
     padding: 40px 0;
     margin-top: 13%;
+}
+
+footer > .logo2 {
+    width: 100%;
+    text-align: center;
+}
+
+footer > .logo2 img {
+    width: 15%;
 }
 
 footer > .icons svg {
@@ -503,6 +558,11 @@ footer > .icons svg {
     margin: 25px 15px;
 }
 
+footer > .icons {
+    width: 100%;
+    text-align: center;
+}
+
 footer > .icons svg:hover {
     border-radius: 100px;
     background-color: var(--White, #FFF);
@@ -514,114 +574,25 @@ footer > .p {
     color: var(--Ter, #F8FCFB);
     text-align: center;
     font-family: 'Playfair Display';
-    font-size: 16px;
+    font-size: 1rem;
     font-style: normal;
     font-weight: 700;
     line-height: 140%;
 }
 
-@media screen and (max-width: 1340px) {
-    .first-sect > .sectyy {
-        width: 40%;
-    }
-    
-    .first-sect > .sectyy .first-pic {
-        width: 100%;
-        right: 8%;
-        bottom: -23%;
+@media screen and (min-width: 320px) and (max-width: 480px) {
+    header {
+        padding: 0;
     }
 
-    .first-sect > .sectyy .second-pic {
-        left: 16%;
-        bottom: 38%;
-    }
-    
-    .first-sect > .sect p {
-        max-width: 73%;
+    header > .iren > .logo {
+        width: 35%;
     }
 
-    main >  .section1 .righty h2 {
-        font-size: 3.3rem;
-        font-weight: 700;
-    }
-
-    main > .section1 .righty {
-        width: 50%;
-        max-width: 50%;
-    }
-}
-
-@media screen and (max-width: 1095px) {
-    .first-sect > .sect {
-        width: 43%;
-    }
-    
-    .first-sect > .sect h1 {
-        font-size: 3rem;
-    }
-    
-    .first-sect > .sect p {
-        font-size: 1.3rem;
-        max-width: 80%;
-    }
-    
-    .first-sect > .sectyy {
-        width: 43%;
-    }
-    
-    .first-sect > .sectyy .first-pic {
-        width: 90%;
-        right: 8%;
-        bottom: -23%;
-    }
-    
-    .first-sect > .sectyy .second-pic {
-        left: 10%;
-        bottom: 35%;
-    }
-
-    main >  .section1 .righty h2 {
-        font-size: 3rem;
-        font-weight: 700;
-    }
-
-    main > .section1 .righty {
-        width: 50%;
-        max-width: 100%;
-    }
-
-    main >  .section1 .okay h5 {
-        font-size: 1.4rem;
-        font-weight: 700;
-    }
-
-    main >  .section1 .okay p {
-        font-size: 1rem;
-    }
-    
-    .section2 > .semi-section2 {
-        width: 50%;
-    }
-    
-    .section2 > .semi-section2 h2 {
-        font-size: 2.65rem;
-    }
-    
-    .section2 > .semi-section2 p {
-        font-size: 1.3rem;
-        max-width: 100%;
-    }
-    
-    .section2 > .semi-section3 {
-        width: 45%;
-    }
-    
-    .section2 > .semi-section3 img {
+    header > .iren > .logo img {
         width: 100%;
     }
-}
 
-@media screen and (max-width: 981px) {
     nav {
         display: none;
     }
@@ -629,7 +600,6 @@ footer > .p {
     .menu-icon{
         display: block;
         width: 100%;
-        padding-top: 7%;
     }
 
     .menu-icon.hide {
@@ -639,7 +609,6 @@ footer > .p {
     .menu-icon-close.hide{
         display: block;
         width: 100%;
-        padding-top: 7%;
     }
 
     header > .nav2.visible {
@@ -647,8 +616,10 @@ footer > .p {
         flex-direction: column;
         background: var(--Ter, #F8FCFB);
         gap: 72px;
-        z-index: 7%;
+        z-index: 5%;
         padding: 10%;
+        position: fixed;
+        width: 100%;
     }
 
     header > .nav2.visible a {
@@ -697,694 +668,1166 @@ footer > .p {
         color: var(--Pry, #005C4D);
         transition: 0.25s;
     }
-
-    .first-sect > .sect {
-        margin-top: 35%;
-    }
     
-    .first-sect > .sect h1 {
-        font-size: 2.60rem;
-        font-weight: 600;
-    }
-    
-    .first-sect > .sect p {
-        font-size: 1.1rem;
-        max-width: 80%;
-    }
-    
-    .first-sect > .sectyy .first-pic {
-        width: 95%;
-        bottom: -27%;
-    }
-    
-    .first-sect > .sectyy .second-pic {
-        bottom: 29%;
-    }
-
-    .section4 > .semi-section5 div h5 {
-        font-size: 1.70rem;
-    }
-}
-
-@media screen and (max-width: 887px) {
-    main >  .section1 .righty h2 {
-        font-size: 2.3rem;
-        font-weight: 700;
-    }
-
-    main > .section1 .righty {
-        width: 50%;
-        max-width: 100%;
-    }
-
-    main >  .section1 .okay h5 {
-        font-size: 1.3rem;
-        font-weight: 700;
-    }
-
-    main >  .section1 .okay p {
-        font-size: 1rem;
-        font-weight: 400;
-    }
-}
-
-@media screen and (max-width: 851px) {
-    header > .iren {
-        position: fixed;
-        top: 0;
-        z-index: 4;
-        width: 100%;
-    }
-
     section {
-        background-image: none;
-        background-color: var(--Ter, #F8FCFB);
+        background-image: url(hero1.png);
+        background-repeat: no-repeat;
         width: 100%;
-        height: 160vh;
-        margin-bottom: 7%;
+        height: 150vh;
+        background: var(--Ter, #F8FCFB);
     }
-
-    .first-sect {
+    
+    section > .first-sect {
         display: flex;
         flex-direction: column;
-        padding: 0 4%;
-    }
-    
-    .first-sect > .sect {
         width: 100%;
-        margin: 0;
-        padding: 0 4%;
-        padding-top: 25%;
-        padding-bottom: 20%;
     }
     
-    .first-sect > .sect h1 {
-        font-size: 3.3rem;
+    section > .first-sect > .sect {
+        width: 90%;
+        margin: 20% auto;
+    }
+    
+    section > .first-sect > .sect h1 {
+        font-size: 2rem;
+        font-weight: 700;
         padding-bottom: 25px;
     }
     
-    .first-sect > .sect p {
-        font-size: 1.80rem;
-        max-width: 93%;
+    section > .first-sect > .sect p {
+        font-size: 1.1rem;
+        font-weight: 400;
+        line-height: 120%;
+        padding-bottom: 25px;
+        max-width: 100%;
     }
     
-    .first-sect > .sectyy {
-        width: 70%;
-        margin: 0 auto;
+    section > .first-sect > .sect button {
+        padding: 10px 15px;
+        font-size: 1rem;
+        font-weight: 700;
     }
     
-    .first-sect > .sectyy .first-pic {
-        position: relative;
+    section > .first-sect > .sect button:hover {
+        border-radius: 100px;
+        background-color: var(--White, #FFF);
+        color: var(--Pry, #005C4D);
+        transition: 0.25s;
+    }
+    
+    section > .first-sect > .sectyy {
         width: 100%;
-        right: 8%;
-        top: -50%;
-        z-index: 2;
+        /* margin: 0 auto; */
     }
     
-    .first-sect > .sectyy .second-pic {
-        position: absolute;
-        width: 72%;
-        left: 18%;
-        bottom: -35%;
-        z-index: 1;
+    section > .first-sect > .sectyy .first-pic {
+        width: 90%;
+        right: -4%;
+        bottom: -19%;
+        z-index: 0;
+    }
+    
+    section > .first-sect > .sectyy .second-pic {
         display: none;
     }
-
-    .first-sect > .sectyy .third-pic {
-        display: block;
-        width: 120%;
-        padding-top: 13%;
+    
+    section > .first-sect > .sectyy .third-pic {
+        display: none;
+        width: 100%;
     }
     
     main > .section1 {
         display: flex;
-        justify-content: center;
+        flex-direction: column;
         align-items: center;
-        padding: 5% 8%;
-        flex-direction: column;
-    }
-    
-    main > .section1 .lefty {
-        width: 70%
-    }
-    
-    main > .section1 .lefty img {
+        padding: 0 8%;
+        margin-top: 0%;
         width: 100%;
-        margin: 0;
     }
     
-    main > .section1 .righty {
+    main > .section1 > .lefty {
         width: 100%;
-        padding-left: 0;
-        padding-top: 10%;
+        margin-bottom: 10%;
     }
     
-    main >  .section1 .righty h2 {
-        padding-bottom: 10%;
-        font-size: 2.75rem;
+    main > .section1 > .lefty img {
+        width: 100%;
+        text-align: center;
     }
     
-    main >  .section1 .righty .nahh {
-        display: flex;
-        padding-bottom: 8%;
-        gap: 32px;
-    }
-    
-    main >  .section1 .righty .okay {
+    main > .section1 > .righty {
+        width: 100%;
         max-width: 100%;
     }
     
-    main >  .section1 .okay h5 {
-        font-size: 1.7rem;
-        padding-bottom: 15px;
-    }
-
-    main >  .section1 .okay p {
-        font-size: 1.3rem;
-        max-width: 100%;
+    main >  .section1 > .righty h2 {
+        font-size: 2rem;
+        text-align: center;
     }
     
-    .section2 {
-        margin-top: 10%;
-        padding: 5% 8%;
-        flex-direction: column;
-    }
-    
-    .section2 > .semi-section2 {
+    main >  .section1 > .righty .nahh {
         width: 100%;
     }
 
-    .section2 > .semi-section2 h2 {
-        font-size: 2.2rem;
+    main >  .section1 > .righty .nahh img {
+        width: 30%;
     }
     
-    .section2 > .semi-section2 p {
-        font-size: 1.5rem;
+    main > .section1 > .righty .okay h5 {
+        font-size: 1.2rem;
+        font-weight: 700;
+    }
+
+    main > .section1 > .righty .okay p {
+        font-size: 1rem;
         font-weight: 400;
+        line-height: 110%;
+    }
+    
+    main > .section2 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 15%;
+        padding: 10% 0;
+        width: 100%;
+    }
+    
+    main > .section2 > .semi-section2 {
+        width: 90%;
+    }
+    
+    main > .section2 > .semi-section2 h2 {
+        font-size: 2rem;
+        font-weight: 700;
+        padding-bottom: 32px;
+        text-align: center;
+    }
+    
+    main > .section2 > .semi-section2 p {
+        font-size: 1rem;
         line-height: 140%;
     }
     
-    .section2 > .semi-section3 {
-        width: 70%;
-        padding-top: 10%;
+    main > .section2 > .semi-section3 {
+        width: 100%;
+        text-align: center;
+        margin-top: 10%;
     }
     
-    .section2 > .semi-section3 img {
+    main > .section2 > .semi-section3 img {
+        width: 90%;
+    }
+    
+    main > .section3 {
+        padding: 10% 0;
         width: 100%;
     }
     
-    .section3 {
-        padding: 10% 0;
+    main > .section3 > h2 {
+        text-align: center;
+        font-size: 2rem;
+        padding-bottom: 5%;
     }
     
-    .section3 > h2 {
-        font-size: 2.75rem;
-    }
-    
-    .section3 > .semi-section4 {
+    main > .section3 > .semi-section4 {
         display: flex;
-        justify-content: center;
-        align-content: center;
+        flex-direction: column;
+        width: 100%;
     }
     
-    .section3 > .semi-section4 div {
-        width: 17%;
+    main > .section3 > .semi-section4 > div {
+        width: 100%;
+        text-align: center;
     }
     
-    .section3 > .semi-section4 div img {
+    main > .section3 > .semi-section4 > div img {
         width: 80%;
     }
     
-    .section3 > .semi-section4 div p {
-        font-size: 1.1rem;
+    main > .section3 > .semi-section4 > div p {
+        text-align: center;
+        font-size: 1.5rem;
         font-weight: 600;
+        line-height: 140%;
+        max-width: 100%;
     }
     
-    .section4 {
+    main > .section4 {
         padding: 3% 0;
         background: var(--Sec, #DCE9E2);
-    }
-    
-    .section4 > .semi-section5 {
-        display: flex;
-        flex-direction: column;
-    }
-    
-    .section4 > .semi-section5 div {
-        width: 60%;
-        margin: 0 auto;
-        padding-bottom: 4%;
-    }
-    
-    .section4 > .semi-section5 div img {
         width: 100%;
-        padding-left: 0;
     }
     
-    .section4 > .semi-section5 div h5 {
+    main > .section4 h2 {
+        text-align: center;
         font-size: 2rem;
-        font-weight: 700;
-        text-align: center;
-        padding: 16px 0;
+        padding: 5%;
     }
-
-    .section4 > .semi-section5 > div p {
-        font-size: 1.25rem;
+    
+    main > .section4 > .semi-section5 {
+        display: grid;
+        grid-template-columns: auto;
+        width: 100%;
+    }
+    
+    main > .section4 > .semi-section5 > div {
+        width: 80%;
         text-align: center;
+        margin: 0 auto;
+    }
+    
+    main > .section4 > .semi-section5 > div:nth-child(2) {
+        width: 80%;
+    }
+    
+    main > .section4 > .semi-section5 > div:last-child {
+        width: 80%;
+    }
+    
+    main > .section4 > .semi-section5 > div img {
+        width: 100%;
+        text-align: center;
+    }
+    
+    main > .section4 > .semi-section5 > div h5 {
+        font-size: 1.5rem;
+        text-align: center;
+    }
+    
+    main > .section4 > .semi-section5 > div p {
+        text-align: center;
+        font-size: 1.2rem;
         max-width: 100%;
-        padding-left: 0;
+        text-wrap: wrap;
+        margin: 0 auto;
     }
     
-    .section4 > .semi-section5 div .read {
+    main > .section4 > .semi-section5 > div .read {
+        color: var(--Pry, #005C4D);
+        text-align: center;
+        font-family: 'Playfair Display';
         font-size: 1.375;
+        font-style: normal;
         font-weight: 700;
+        line-height: 140%;
     }
     
-    .section4 > .semi-section5 div .read:hover {
+    main > .section4 > .semi-section5 > div .read:hover {
+        /* border-radius: 5px; */
+        /* background-color: var(--White, #FFF); */
         color: rgb(140, 136, 136);
         transition: 0.25s;
     }
-
-    .section4 > .btn button {
-        font-size: 1.5rem;
-        padding: 12px 30px;
-    }
     
-    .section5 > .semi-section6 {
+    main > .section4 > .btn {
         display: flex;
-        flex-direction: column;
-    }
-
-    .section5 h2 {
-        font-size: 2.2rem;
-        font-weight: 600;
-        padding: 10%;
+        margin-top: 5%;
     }
     
-    .section5 > .semi-section6 div {
-        width: 60%;
-        margin: 0 auto;
+    main > .section4 > .btn button {
+        font-size: 1rem;
+        padding: 10px 15px;
     }
     
-    .section5 > .semi-section6 div img {
+    main > .section4 > .btn button:hover {
+        border-radius: 100px;
+        background-color: var(--White, #FFF);
+        color: var(--Pry, #005C4D);
+        transition: 0.25s;
+    }
+    
+    main > .section5 {
+        margin: 5% auto;
         width: 100%;
     }
     
-    .section5 > .semi-section6 h5 {
-        font-size: 1.8rem;
-        font-weight: 600;
-        line-height: 140%;
-        padding: 0;
-        padding-top: 24px;
-        margin: 0 auto;
+    main > .section5 h2 {
+        font-size: 2rem;
+        padding: 5%;
+        text-align: center;
     }
     
-    .section5 > .semi-section6 h6 {
-        font-size: 1.125rem;
-        font-weight: 600;
-        line-height: 140%;
-        padding: 0;
-    }
-    
-    .section5 > .semi-section6 p {
-        font-size: 1.25rem;
-        font-weight: 400;
-        padding-top: 24px;
-        padding-bottom: 60px;
-        max-width: 100%;
-    }
-    
-    .section5 > .tho {
-        margin: 15% auto;
-        width: 5%;
-    }
-    
-    .section5 > .tho img {
-        width: 45%;
-        padding: 0 auto;
-        gap: 0;
-        justify-content: center;
-        align-content: center;
-    }
-}
-
-@media screen and (max-width: 780px) {
-    .first-sect > .sectyy .first-pic {
-        position: relative;
+    main > .section5 > .semi-section6 {
+        display: grid;
+        grid-template-columns: auto;
         width: 100%;
-        right: 8%;
-        top: -50%;
+        margin-top: 5%;
     }
     
-    .first-sect > .sectyy .second-pic {
-        position: absolute;
-        width: 69%;
-        bottom: -30%;
-    }
-
-    .first-sect > .sectyy .third-pic {
-        display: block;
-        width: 120%;
-        padding-top: 13%;
-        margin: 0;
-    }
-
-    .section5 > .tho {
-        margin: 0 auto;
-        width: 5%;
+    main > .section5 > .semi-section6 > div {
+        width: 100%;
+        text-align: center;
+        margin: 7% auto;
     }
     
-    .section5 > .tho img {
-        width: 25%;
-        padding: 0 auto;
-        gap: 0;
-        justify-content: center;
-        align-content: center;
-    }
-}
-
-@media screen and (max-width: 723px) {
-    .first-sect > .sectyy .second-pic {
-        position: absolute;
-        width: 69%;
-        bottom: -22%;
-    }
-}
-
-@media screen and (max-width: 665px) {
-    .first-sect > .sectyy .second-pic {
-        position: absolute;
-        width: 69%;
-        bottom: -14%;
-    }
-}
-
-@media screen and (max-width: 600px) {
-    header > .iren > .logo img {
+    main > .section5 > .semi-section6 > div img {
         width: 80%;
+        text-align: center;
     }
-
-    main >  .section1 .righty h2 {
-        padding-bottom: 10%;
-        font-size: 2.2rem;
+    
+    main > .section5 > .semi-section6 > div h5 {
+        text-align: center;
+        font-size: 1.7rem;
+        padding-top: 20px;
     }
-
-    main >  .section1 > .righty > .nahh {
-        width: 100%;
-    }
-
-    main >  .section1 > .righty > .nahh img {
-        width: 100%;
-    }
-
-    main >  .section1 .okay h5 {
-        font-size: 1.2rem;
-        padding-bottom: 10px;
-    }
-
-    main >  .section1 .okay p {
+    
+    main > .section5 > .semi-section6 > div h6 {
+        text-align: center;
         font-size: 1rem;
     }
-
-    .section2 > .semi-section2 h2 {
-        font-size: 2.2rem;
-    }
-
-    .section3 > h2 {
-        font-size: 2.2rem;
-    } 
-
-    .section3 > .semi-section4 div {
-        width: 19%;
+    
+    main > .section5 > .semi-section6 > div p {
+        font-size: 1rem;
+        line-height: 125%;
+        max-width: 90%;
     }
     
-    .section3 > .semi-section4 div img {
+    main > .section5 > .tho {
+        display: flex;
+    }
+    
+    main > .section5 > .tho img {
+        width: 50%;
+    }
+    
+    footer {
+        padding: 40px 0;
+        margin-top: 13%;
+        width: 100%;
+    }
+
+    footer > .logo2 {
+        width: 100%;
+        text-align: center;
+    }
+    
+    footer > .logo2 img {
         width: 70%;
     }
     
-    .section3 > .semi-section4 div p {
-        font-size: 1rem;
-        font-weight: 500;
+    footer > .icons svg {
+        transition: transform 300ms;
     }
 
-    .section4 h2 {
-        font-size: 2.2rem;
+    footer > .icons {
+        width: 100%;
+        text-align: center;
+    }
+    
+    footer > .icons svg:hover {
+        border-radius: 100px;
+        background-color: var(--White, #FFF);
+        color: var(--White, #FFF);
+        transition: 0.35s;
+    }
+    
+    footer > .p {
+        font-size: 1rem;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    header {
+        padding: 0;
+    }
+    
+    header > .iren > .logo {
+        width: 35%;
+    }
+
+    header > .iren > .logo img {
+        width: 100%;
+    }
+
+    header > .iren > div {
+        width: 7%;
+    }
+
+    nav {
+        display: none;
+    }
+
+    .menu-icon{
+        display: block;
+        width: 100%;
+    }
+
+    .menu-icon.hide {
+        display: none;
+    }
+
+    .menu-icon-close.hide{
+        display: block;
+        width: 100%;
+    }
+
+    header > .nav2.visible {
+        display: flex;
+        flex-direction: column;
+        background: var(--Ter, #F8FCFB);
+        gap: 72px;
+        z-index: 7%;
+        padding: 10%;
+        position: fixed;
+        width: 100%;
+        /* position: absolute; */
+    }
+
+    header > .nav2.visible a {
+        color: var(--Mid-grey, #AFAFAF);
+        font-family: 'Playfair Display';
+        font-size: 2rem;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 140%;
+        text-decoration: none;
+        padding: 12px 20px;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    header > .nav2.visible a:hover {
+        transition: 0.25s;
+        border-radius: 100px;
+        background: var(--Pry, #005C4D);
+        color: white;
+    }
+    
+    header > .nav2 .home {
+        color: var(--Pry, #005C4D);
+        font-family: 'Playfair Display';
+        font-size: 1.5rem;
+        font-weight: 600;
+        line-height: 140%;
+    }
+    
+    header > .nav2 button {
+        padding: 12px 40px;
+        color: var(--White, #FFF);
+        font-family: 'Playfair Display';
+        font-size: 2rem;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 140%;
+        border-radius: 100px;
+        background: var(--Pry, #005C4D);
+    }
+    
+    header > .nav2 button:hover {
+        border-radius: 100px;
+        background-color: var(--White, #FFF);
+        color: var(--Pry, #005C4D);
+        transition: 0.25s;
+    }
+    
+    section {
+        width: 100%;
+        height: 120vh;
+    }
+    
+    section > .first-sect {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        padding-top: 15%;
+        background: var(--Ter, #F8FCFB);
+    }
+    
+    section > .first-sect > .sect {
+        width: 90%;
+        margin: 0 auto 10% auto;
+    }
+    
+    section > .first-sect > .sect h1 {
+        font-size: 2.5rem;
+    }
+    
+    section > .first-sect > .sect p {
+        font-size: 1.5rem;
+        max-width: 100%;
+    }
+    
+    section > .first-sect > .sect button {
+        padding: 15px 30px;
+        font-size: 1.2rem;
+    }
+    
+    section > .first-sect > .sect button:hover {
+        border-radius: 100px;
+        background-color: var(--White, #FFF);
+        color: var(--Pry, #005C4D);
+        transition: 0.25s;
+    }
+    
+    section > .first-sect > .sectyy {
+        width: 100%;
+        text-align: center;
+        /* margin: 0 auto; */
+    }
+    
+    section > .first-sect > .sectyy .first-pic {
+        /* position: relative; */
+        width: 85%;
+        right: 0%;
+        bottom: -15%;
+        z-index: 0;
+    }
+    
+    section > .first-sect > .sectyy .second-pic {
+        display: none;
+    }
+    
+    section > .first-sect > .sectyy .third-pic {
+        display: none;
+        width: 100%;
+    }
+    
+    main > .section1 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 0 8%;
+        margin-top: 0%;
+        width: 100%;
+    }
+    
+    main > .section1 > .lefty {
+        width: 100%;
+        margin-bottom: 10%;
+    }
+    
+    main > .section1 > .lefty img {
+        width: 100%;
+        text-align: center;
+    }
+    
+    main > .section1 > .righty {
+        width: 100%;
+        max-width: 100%;
+    }
+    
+    main >  .section1 > .righty h2 {
+        font-size: 3rem;
+        text-align: center;
+    }
+    
+    main >  .section1 > .righty .nahh {
+        width: 100%;
+    }
+
+    main >  .section1 > .righty .nahh img {
+        width: 50%;
+    }
+    
+    main > .section1 > .righty .okay h5 {
+        font-size: 2rem;
         font-weight: 700;
     }
 
-    .section4 > .semi-section5 div p {
-        /* font-size: 1.rem; */
-        text-align: center;
-        padding-left: 0;
-        max-width: 100%;
-    }
-
-    .section2 > .semi-section2 p {
-        font-size: 1rem;
+    main > .section1 > .righty .okay p {
+        font-size: 1.5rem;
         font-weight: 400;
+        line-height: 110%;
+    }
+    
+    main > .section2 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 15%;
+        padding: 10% 0;
+        width: 100%;
+    }
+    
+    main > .section2 > .semi-section2 {
+        width: 90%;
+    }
+    
+    main > .section2 > .semi-section2 h2 {
+        font-size: 3rem;
+        font-weight: 700;
+        padding-bottom: 32px;
+        text-align: center;
+    }
+    
+    main > .section2 > .semi-section2 p {
+        font-size: 1.5rem;
         line-height: 140%;
     }
-}
-
-@media screen and (max-width: 588px) {
-    .first-sect > .sectyy .second-pic {
-        position: absolute;
-        width: 69%;
-        bottom: -6%;
-    }
-
-    .first-sect > .sect h1 {
-        font-size: 3rem;
-        padding-bottom: 25px;
-    }
-
-    .first-sect > .sect p {
-        font-size: 1.5rem;
-        max-width: 100%;
-    }
-
-    section {
-        width: 100%;
-        height: 140vh;
-    }
     
-    .section4 > .semi-section5 > div p {
-        /* font-size: 1.5rem; */
+    main > .section2 > .semi-section3 {
+        width: 100%;
         text-align: center;
-        max-width: 100%;
-        padding-left: 0;
+        margin-top: 10%;
     }
-}
-
-@media screen and (max-width: 498px) {
-    section {
+    
+    main > .section2 > .semi-section3 img {
+        width: 90%;
+    }
+    
+    main > .section3 {
+        padding: 10% 0;
         width: 100%;
-        height: 110vh;
-    }
-
-    .first-sect > .sect h1 {
-        font-size: 2.5rem;
-        padding-bottom: 25px;
-    }
-
-    .first-sect > .sect p {
-        font-size: 1.20rem;
-        max-width: 100%;
-    }
-
-    .first-sect > .sect button {
-        font-size: 1rem;
-        font-weight: 600;
-    }
-
-    .first-sect > .sectyy .second-pic {
-        position: absolute;
-        width: 69%;
-        bottom: 12%;
     }
     
-    .section3 > .semi-section4 {
+    main > .section3 > h2 {
+        text-align: center;
+        font-size: 3rem;
+        padding-bottom: 5%;
+    }
+    
+    main > .section3 > .semi-section4 {
         display: flex;
-        justify-content: center;
-        align-content: center;
-        flex-wrap: wrap;
+        flex-direction: column;
+        width: 100%;
     }
     
-    .section3 > .semi-section4 div {
-        width: 17%;
-        flex-basis: 40%;
+    main > .section3 > .semi-section4 > div {
+        width: 100%;
+        text-align: center;
+        margin: 0 auto 8% auto;
     }
     
-    .section3 > .semi-section4 div img {
+    main > .section3 > .semi-section4 > div img {
         width: 80%;
     }
     
-    .section3 > .semi-section4 div p {
-        font-size: 1.2rem;
-        font-weight: 600;
-        max-width: 12rem;
-    }
-
-    .section4 > .btn button {
-        font-size: 1rem;
-        /* padding: 8px 30px; */
-    }
-
-    .section5 h2 {
+    main > .section3 > .semi-section4 > div p {
+        text-align: center;
         font-size: 2rem;
         font-weight: 600;
-        padding: 10%;
-    }
-}
-
-@media screen and (max-width: 456px) {
-    .first-sect > .sectyy .second-pic {
-        position: absolute;
-        width: 69%;
-        bottom: 17%;
-    }
-
-    .first-sect > .sect button {
-        font-size: 1rem;
-        font-weight: 500;
-    }
-
-    main >  .section1 .righty h2 {
-        padding-bottom: 10%;
-        font-size: 2rem;
-    }
-
-    .section2 > .semi-section2 h2 {
-        font-size: 2rem;
-    }
-
-    .section3 > h2 {
-        font-size: 2rem;
-    } 
-
-    .section4 > h2 {
-        font-size: 2rem;
-    } 
-
-    .section4 > .semi-section5 div h5 {
-        font-size: 1.7rem;
-    }
-
-    .section5 > h2 {
-        font-size: 2rem;
-    } 
-
-    .section5 > .semi-section6 div h5 {
-        font-size: 1.5rem;
-    }
-
-    .section4 > .semi-section5 div {
-        width: 75%;
-        margin: 0 auto;
-        padding-bottom: 4%;
-    }
-
-    .section5 > .semi-section6 div {
-        width: 75%;
-        margin: 0 auto;
-    }
-}
-
-@media screen and (max-width: 416px) {
-    .first-sect > .sect h1 {
-        font-size: 2.2rem;
-        padding-bottom: 25px;
-    }
-
-    .first-sect > .sect p {
-        font-size: 1.20rem;
+        line-height: 140%;
         max-width: 100%;
-    }
-}
-
-@media screen and (max-width: 396px) {
-    section {
-        width: 100%;
-        height: 90vh;
-    }
-    .first-sect > .sect h1 {
-        font-size: 2rem;
-        font-weight: 600;
-        padding-bottom: 25px;
     }
     
-    .first-sect > .sect p {
-        font-size: 1.1rem;
-        font-weight: 400;
+    main > .section4 {
+        padding: 3% 0;
+        background: var(--Sec, #DCE9E2);
+        width: 100%;
+    }
+    
+    main > .section4 h2 {
+        text-align: center;
+        font-size: 3rem;
+        padding: 5%;
+    }
+    
+    main > .section4 > .semi-section5 {
+        display: grid;
+        grid-template-columns: auto;
+        width: 100%;        
+    }
+    
+    main > .section4 > .semi-section5 > div {
+        width: 80%;
+        text-align: center;
+        margin: 0 auto 8% auto;
+    }
+    
+    main > .section4 > .semi-section5 > div:nth-child(2) {
+        width: 80%;
+    }
+    
+    main > .section4 > .semi-section5 > div:last-child {
+        width: 80%;
+    }
+    
+    main > .section4 > .semi-section5 > div img {
+        width: 100%;
+        text-align: center;
+    }
+    
+    main > .section4 > .semi-section5 > div h5 {
+        font-size: 2rem;
+        text-align: center;
+    }
+    
+    main > .section4 > .semi-section5 > div p {
+        text-align: center;
+        font-size: 2rem;
         max-width: 100%;
+        text-wrap: wrap;
+        margin: 0 auto;
     }
-
-    .first-sect > .sect button {
-        padding: 8px 25px;
-        font-size: 1rem;
-        font-weight: 600;
+    
+    main > .section4 > .semi-section5 > div .read {
+        color: var(--Pry, #005C4D);
+        text-align: center;
+        font-family: 'Playfair Display';
+        font-size: 2rem;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 140%;
     }
-
-    .first-sect > .sectyy .second-pic {
-        position: absolute;
-        width: 69%;
-        bottom: 30%;
+    
+    main > .section4 > .semi-section5 > div .read:hover {
+        /* border-radius: 5px; */
+        /* background-color: var(--White, #FFF); */
+        color: rgb(140, 136, 136);
+        transition: 0.25s;
     }
-
-    main >  .section1 .righty h2 {
-        padding-bottom: 10%;
-        font-size: 1.5rem;
+    
+    main > .section4 > .btn {
+        display: flex;
+        margin-top: 5%;
     }
-
-    main >  .section1 .okay h5 {
-        font-size: 1.1rem;
-        padding-bottom: 10px;
-    }
-
-    .section2 > .semi-section2 h2 {
-        font-size: 1.5rem;
-    }
-
-    .section3 > h2 {
-        font-size: 1.5rem;
-    } 
-
-    .section4 > h2 {
-        font-size: 1.5rem;
-    }
-
-    .section4 > .semi-section5 div h5 {
-        font-size: 1.4rem;
-    }
-
-    .section5 > h2 {
-        font-size: 1.5rem;
-    } 
-
-    .section5 > .semi-section6 div h5 {
+    
+    main > .section4 > .btn button {
+        padding: 15px 30px;
         font-size: 1.2rem;
     }
+    
+    main > .section4 > .btn button:hover {
+        border-radius: 100px;
+        background-color: var(--White, #FFF);
+        color: var(--Pry, #005C4D);
+        transition: 0.25s;
+    }
+    
+    main > .section5 {
+        margin: 5% auto;
+        width: 100%;
+    }
+    
+    main > .section5 h2 {
+        font-size: 3rem;
+        padding: 5%;
+        text-align: center;
+    }
+    
+    main > .section5 > .semi-section6 {
+        display: grid;
+        grid-template-columns: auto;
+        width: 100%;
+        margin-top: 5%;
+    }
+    
+    main > .section5 > .semi-section6 > div {
+        width: 100%;
+        text-align: center;
+        margin: 7% auto;
+    }
+    
+    main > .section5 > .semi-section6 > div img {
+        width: 80%;
+        text-align: center;
+    }
+    
+    main > .section5 > .semi-section6 > div h5 {
+        text-align: center;
+        font-size: 2rem;
+        padding-top: 20px;
+    }
+    
+    main > .section5 > .semi-section6 > div h6 {
+        text-align: center;
+        font-size: 1.5rem;
+    }
+    
+    main > .section5 > .semi-section6 > div p {
+        font-size: 2rem;
+        line-height: 125%;
+        max-width: 90%;
+    }
+    
+    main > .section5 > .tho {
+        display: flex;
+    }
+    
+    main > .section5 > .tho img {
+        width: 50%;
+    }
+    
+    footer {
+        padding: 40px 0;
+        margin-top: 13%;
+        width: 100%;
+    }
+
+    footer > .logo2 {
+        width: 100%;
+        text-align: center;
+    }
+    
+    footer > .logo2 img {
+        width: 60%;
+    }
+    
+    footer > .icons svg {
+        transition: transform 300ms;
+        width: 10%;
+        height: 10%;
+    }
+
+    footer > .icons {
+        width: 100%;
+        text-align: center;
+    }
+    
+    footer > .icons svg:hover {
+        border-radius: 100px;
+        background-color: var(--White, #FFF);
+        color: var(--White, #FFF);
+        transition: 0.35s;
+    }
+    
+    footer > .p {
+        font-size: 2rem;
+    }
 }
 
-@media screen and (max-width: 356px) {
+@media screen and (min-width: 1280px) and (max-width: 800px) {
     section {
         width: 100%;
-        height: 73vh;
+        height: 120vh;
+    }
+    
+    section > .first-sect {
+        display: flex;
+        width: 100%;
+        padding-top: 15%;
+    }
+    
+    section > .first-sect > .sect {
+        width: 50%;
+        margin: 0;
+    }
+    
+    section > .first-sect > .sect h1 {
+        font-size: 2.5rem;
+    }
+    
+    section > .first-sect > .sect p {
+        font-size: 1.5rem;
+        max-width: 100%;
+    }
+    
+    section > .first-sect > .sect button {
+        padding: 15px 30px;
+        font-size: 1.2rem;
+    }
+    
+    section > .first-sect > .sect button:hover {
+        border-radius: 100px;
+        background-color: var(--White, #FFF);
+        color: var(--Pry, #005C4D);
+        transition: 0.25s;
+    }
+    
+    section > .first-sect > .sectyy {
+        width: 45%;
+        text-align: center;
+        /* margin: 0 auto; */
+    }
+    
+    section > .first-sect > .sectyy .first-pic {
+        /* position: relative; */
+        width: 5%;
+        right: 0%;
+        bottom: -15%;
+        z-index: 0;
+    }
+    
+    section > .first-sect > .sectyy .second-pic {
+        display: none;
+    }
+    
+    section > .first-sect > .sectyy .third-pic {
+        display: none;
+        width: 100%;
+    }
+    
+    main > .section1 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 0 8%;
+        margin-top: 0%;
+        width: 100%;
+    }
+    
+    main > .section1 > .lefty {
+        width: 100%;
+        margin-bottom: 10%;
+    }
+    
+    main > .section1 > .lefty img {
+        width: 100%;
+        text-align: center;
+    }
+    
+    main > .section1 > .righty {
+        width: 100%;
+        max-width: 100%;
+    }
+    
+    main >  .section1 > .righty h2 {
+        font-size: 3rem;
+        text-align: center;
+    }
+    
+    main >  .section1 > .righty .nahh {
+        width: 100%;
     }
 
-    .first-sect > .sectyy .second-pic {
-        position: absolute;
-        width: 69%;
-        bottom: 35%;
+    main >  .section1 > .righty .nahh img {
+        width: 50%;
     }
-}
-
-@media screen and (max-width: 334px) {
-    .first-sect > .sect h1 {
-        font-size: 1.7rem;
+    
+    main > .section1 > .righty .okay h5 {
+        font-size: 2rem;
+        font-weight: 700;
     }
 
-    .first-sect > .sect p {
-        font-size: 1rem;
+    main > .section1 > .righty .okay p {
+        font-size: 1.5rem;
+        font-weight: 400;
+        line-height: 110%;
+    }
+    
+    main > .section2 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 15%;
+        padding: 10% 0;
+        width: 100%;
+    }
+    
+    main > .section2 > .semi-section2 {
+        width: 90%;
+    }
+    
+    main > .section2 > .semi-section2 h2 {
+        font-size: 3rem;
+        font-weight: 700;
+        padding-bottom: 32px;
+        text-align: center;
+    }
+    
+    main > .section2 > .semi-section2 p {
+        font-size: 1.5rem;
+        line-height: 140%;
+    }
+    
+    main > .section2 > .semi-section3 {
+        width: 100%;
+        text-align: center;
+        margin-top: 10%;
+    }
+    
+    main > .section2 > .semi-section3 img {
+        width: 90%;
+    }
+    
+    main > .section3 {
+        padding: 10% 0;
+        width: 100%;
+    }
+    
+    main > .section3 > h2 {
+        text-align: center;
+        font-size: 3rem;
+        padding-bottom: 5%;
+    }
+    
+    main > .section3 > .semi-section4 {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+    
+    main > .section3 > .semi-section4 > div {
+        width: 100%;
+        text-align: center;
+        margin: 0 auto 8% auto;
+    }
+    
+    main > .section3 > .semi-section4 > div img {
+        width: 80%;
+    }
+    
+    main > .section3 > .semi-section4 > div p {
+        text-align: center;
+        font-size: 2rem;
+        font-weight: 600;
+        line-height: 140%;
+        max-width: 100%;
+    }
+    
+    main > .section4 {
+        padding: 3% 0;
+        background: var(--Sec, #DCE9E2);
+        width: 100%;
+    }
+    
+    main > .section4 h2 {
+        text-align: center;
+        font-size: 3rem;
+        padding: 5%;
+    }
+    
+    main > .section4 > .semi-section5 {
+        display: grid;
+        grid-template-columns: auto;
+        width: 100%;        
+    }
+    
+    main > .section4 > .semi-section5 > div {
+        width: 80%;
+        text-align: center;
+        margin: 0 auto 8% auto;
+    }
+    
+    main > .section4 > .semi-section5 > div:nth-child(2) {
+        width: 80%;
+    }
+    
+    main > .section4 > .semi-section5 > div:last-child {
+        width: 80%;
+    }
+    
+    main > .section4 > .semi-section5 > div img {
+        width: 100%;
+        text-align: center;
+    }
+    
+    main > .section4 > .semi-section5 > div h5 {
+        font-size: 2rem;
+        text-align: center;
+    }
+    
+    main > .section4 > .semi-section5 > div p {
+        text-align: center;
+        font-size: 2rem;
+        max-width: 100%;
+        text-wrap: wrap;
+        margin: 0 auto;
+    }
+    
+    main > .section4 > .semi-section5 > div .read {
+        color: var(--Pry, #005C4D);
+        text-align: center;
+        font-family: 'Playfair Display';
+        font-size: 2rem;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 140%;
+    }
+    
+    main > .section4 > .semi-section5 > div .read:hover {
+        /* border-radius: 5px; */
+        /* background-color: var(--White, #FFF); */
+        color: rgb(140, 136, 136);
+        transition: 0.25s;
+    }
+    
+    main > .section4 > .btn {
+        display: flex;
+        margin-top: 5%;
+    }
+    
+    main > .section4 > .btn button {
+        padding: 15px 30px;
+        font-size: 1.2rem;
+    }
+    
+    main > .section4 > .btn button:hover {
+        border-radius: 100px;
+        background-color: var(--White, #FFF);
+        color: var(--Pry, #005C4D);
+        transition: 0.25s;
+    }
+    
+    main > .section5 {
+        margin: 5% auto;
+        width: 100%;
+    }
+    
+    main > .section5 h2 {
+        font-size: 3rem;
+        padding: 5%;
+        text-align: center;
+    }
+    
+    main > .section5 > .semi-section6 {
+        display: grid;
+        grid-template-columns: auto;
+        width: 100%;
+        margin-top: 5%;
+    }
+    
+    main > .section5 > .semi-section6 > div {
+        width: 100%;
+        text-align: center;
+        margin: 7% auto;
+    }
+    
+    main > .section5 > .semi-section6 > div img {
+        width: 80%;
+        text-align: center;
+    }
+    
+    main > .section5 > .semi-section6 > div h5 {
+        text-align: center;
+        font-size: 2rem;
+        padding-top: 20px;
+    }
+    
+    main > .section5 > .semi-section6 > div h6 {
+        text-align: center;
+        font-size: 1.5rem;
+    }
+    
+    main > .section5 > .semi-section6 > div p {
+        font-size: 2rem;
+        line-height: 125%;
+        max-width: 90%;
+    }
+    
+    main > .section5 > .tho {
+        display: flex;
+    }
+    
+    main > .section5 > .tho img {
+        width: 50%;
+    }
+    
+    footer {
+        padding: 40px 0;
+        margin-top: 13%;
+        width: 100%;
+    }
+
+    footer > .logo2 {
+        width: 100%;
+        text-align: center;
+    }
+    
+    footer > .logo2 img {
+        width: 60%;
+    }
+    
+    footer > .icons svg {
+        transition: transform 300ms;
+        width: 10%;
+        height: 10%;
+    }
+
+    footer > .icons {
+        width: 100%;
+        text-align: center;
+    }
+    
+    footer > .icons svg:hover {
+        border-radius: 100px;
+        background-color: var(--White, #FFF);
+        color: var(--White, #FFF);
+        transition: 0.35s;
+    }
+    
+    footer > .p {
+        font-size: 2rem;
     }
 }

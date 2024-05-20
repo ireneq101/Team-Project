@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
 * {
     padding: 0;
     margin: 0;
@@ -6,7 +8,6 @@
 
 body {
     width: 100%;
-    max-width: 1540%;
     margin: 0 auto;
 }
 
@@ -19,6 +20,14 @@ header > .iren {
     background: var(--Ter, #F8FCFB);
     position: fixed;
     z-index: 4;
+    width: 100%;
+}
+
+header > .iren > .logo {
+    width: 18%;
+}
+
+header > .iren > .logo img {
     width: 100%;
 }
 
@@ -429,6 +438,7 @@ header > .iren button:hover {
 }
 
 footer {
+    width: 100%;
     background-color: var(--Pry, #005C4D);
     display: flex;
     justify-content: center;
@@ -439,21 +449,31 @@ footer {
     margin-top: 13%;
 }
 
-footer > .icons {
-    gap: 60px;
+footer > .logo2 {
+    width: 100%;
+    text-align: center;
+}
+
+footer > .logo2 img {
+    width: 15%;
 }
 
 footer > .icons svg {
     width: 40px;
     height: 36px;
     gap: 40px;
-    border: 2px solid  #DCE9E2;
-    border-radius: 100%;
+    border: 2px solid #DCE9E2;
+    border-radius: 90%;
     border-width: 300ms;
     background-color: var(--Sec, #DCE9E2);
     color: white;
     transition: transform 300ms;
     margin: 25px 15px;
+}
+
+footer > .icons {
+    width: 100%;
+    text-align: center;
 }
 
 footer > .icons svg:hover {
@@ -467,21 +487,21 @@ footer > .p {
     color: var(--Ter, #F8FCFB);
     text-align: center;
     font-family: 'Playfair Display';
-    font-size: 16px;
+    font-size: 1rem;
     font-style: normal;
     font-weight: 700;
     line-height: 140%;
 }
 
-@media screen and (max-width: 1440px) {
-    .section1 {
-        margin: 0;
-        width: 100%;
-        height: 80vh;
+@media screen and (min-width: 320px) and (max-width: 480px) { 
+    header > .iren > .left {
+        width: 35%;
     }
-}
 
-@media screen and (max-width: 981px) {
+    header > .iren > .left img {
+        width: 100%;
+    }
+
     nav {
         display: none;
     }
@@ -500,6 +520,10 @@ footer > .p {
         width: 100%;
     }
 
+    header {
+        width: 100%;
+    }
+
     header > .nav2.visible {
         display: flex;
         flex-direction: column;
@@ -507,6 +531,8 @@ footer > .p {
         gap: 72px;
         z-index: 7%;
         padding: 10%;
+        position: fixed;
+        width: 100%;
     }
 
     header > .nav2.visible a {
@@ -556,356 +582,661 @@ footer > .p {
         transition: 0.25s;
     }
 
+    .section1 {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-items: center;
+        background-position: center;
+    }
+    
     .section1 h1 {
         text-align: center;
-        padding: 33% 0;
         font-size: 4rem;
     }
     
+    .main {
+        width: 100%;
+        margin: 7% auto;
+    }
+    
+    .main h2 {
+        font-size: 2rem;
+    }
+    
     .main > .oops {
-        width: 60%;
+        width: 100%;
         margin: 0 auto;
     }
     
     .main > .oops p {
         text-align: center;
-        font-size: 1.45rem;
-        font-weight: 400;
+        font-size: 1.2rem;
         width: 100%;
+        padding: 0 2%;
     }
-}
-
-@media screen and (max-width: 851px) {
-    header > .iren > .left img {
-        width: 80%;
-    }
-
-    .main h2 {
-        font-size: 2.75rem;
-        font-weight: 700;
-        padding-bottom: 32px;
-    }
-
-    section > div {
-        width: 100%;
-        gap: 20px;
-        display: flex;
-        justify-content: center;
-        align-content: center;
-        flex-direction: column;
-    }
-
+    
     .section2 {
-        flex-direction: column-reverse;
-        gap: 20px;
+        display: flex;
+        flex-direction: column;
+        gap: 10%;
+        padding: 40px 0;
+        margin-bottom: 40px;
+        width: 100%;
     }
     
     .section2 > .image1 {
-        width: 57%;
+        width: 100%;
+        text-align: center;
     }
     
     .section2 > .image1 img {
+        width: 85%;
+        margin-left: 0;
+    }
+    
+    .section2 > .medical {
         width: 100%;
-        margin: 0;
-    }
-    
-    .medical {
-        width: 90%;
-        padding: 4%;
-    }
-    
-    .medical h5 {
         text-align: center;
+        justify-content: center;
+        align-content: center;
     }
     
-    .medical p {
+    .section2 > .medical h5 {
+        font-size: 1.5rem;
         text-align: center;
-        font-size: 1.45rem;
+        padding-top: 2%;
+    }
+    
+    .section2 > .medical p {
+        font-size: 1rem;
         max-width: 100%;
-        word-break: keep-all;
     }
-
+    
     .section3 {
-        background: var(--Light-grey, #FAFAFA);
+        display: flex;
+        flex-direction: column-reverse;
+        padding: 10% 0;
+        margin-bottom: 40px;
+        width: 100%;
     }
     
     .section3 > .image2 {
-        width: 57%;
-        margin: 0 0 0 0;
+        width: 100%;
+        margin-right: 0;
+        text-align: center;
     }
     
     .section3 > .image2 img {
-        width: 100%;
+        width: 85%;
         margin-left: 0;
     }
     
     .section3 > .health {
-        width: 90%;
+        width: 100%;
         margin-left: 0;
-        padding: 4%;
+        text-align: center;
     }
     
     .section3 > .health h5{
+        font-size: 1.5rem;
         text-align: center;
+        padding-top: 2%;
     }
     
     .section3 > .health p {
-        text-align: center;
-        font-size: 1.45rem;
-        max-width: 100%;
-        word-break: keep-all;
+        font-size: 1rem;
+        max-width: 95%;
     }
-
+    
     .section4 {
-        flex-direction: column-reverse;
-        gap: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10%;
+        padding: 40px 0;
+        margin-bottom: 40px;
     }
-
+    
     .section4 > .image3 {
-        width: 57%;
+        width: 100%;
+        text-align: center;
     }
     
     .section4 > .image3 img {
-        width: 100%;
-        margin: 0;
+        width: 85%;
+        margin-left: 0;
     }
     
     .section4 > .mach {
-        width: 90%;
-        padding: 4%;
+        width: 100%;
+        justify-content: center;
+        align-content: center;
     }
     
-    .section4 > .mach h5 {
+    .section4 > .mach h5{
         text-align: center;
+        font-size: 1.5rem;
+        padding-top: 2%;
     }
     
     .section4 > .mach p {
         text-align: center;
-        font-size: 1.45rem;
-        max-width: 100%;
-        word-break: keep-all;
+        font-size: 1rem;
+        max-width: 95%;
     }
     
     .section5 {
-        background: var(--Light-grey, #FAFAFA);
+        width: 100%;
+        display: flex;
+        flex-direction: column-reverse;
+        padding: 40px 0;
     }
     
     .section5 > .image4 {
-        width: 57%;
-        margin: 0 0 0 0;
+        width: 100%;
+        margin-right: 0;
+        text-align: center;
     }
     
     .section5 > .image4 img {
-        width: 100%;
+        width: 85%;
         margin-left: 0;
     }
     
     .section5 > .tele {
-        width: 90%;
+        width: 100%;
         margin-left: 0;
-        padding: 4%;
     }
     
     .section5 > .tele h5{
         text-align: center;
+        font-size: 1.5rem;
     }
     
     .section5 > .tele p {
         text-align: center;
-        font-size: 1.45rem;
-        max-width: 100%;
-        word-break: keep-all;
+        font-size: 1rem;
+        max-width: 95%;
     }
-
+    
     .section6 {
-        flex-direction: column-reverse;
-        gap: 20px;
+        display: flex;
+        flex-direction: column;
+        padding: 40px 0;
+        margin-bottom: 40px;
     }
-
+    
     .section6 > .image5 {
-        width: 57%;
+        width: 100%;
+        text-align: center;
     }
     
     .section6 > .image5 img {
-        width: 100%;
-        margin: 0;
+        width: 85%;
+        margin-left: 0;
     }
     
     .section6 > .manage {
-        width: 90%;
-        padding: 4%;
+        width: 100%;
     }
     
-    .section6 > .manage h5 {
+    .section6 > .manage h5{
         text-align: center;
+        font-size: 1.5rem;
+        padding-top: 2%;
     }
     
     .section6 > .manage p {
         text-align: center;
-        font-size: 1.45rem;
-        max-width: 100%;
-        word-break: keep-all;
+        font-size: 1rem;
+        max-width: 95%;
     }
-
+    
     .section7 {
-        background: var(--Light-grey, #FAFAFA);
+        display: flex;
+        flex-direction: column-reverse;
+        width: 100%;
     }
     
     .section7 > .image6 {
-        width: 57%;
-        margin: 0 0 0 0;
+        width: 100%;
+        margin-right: 0;
+        text-align: center;
     }
     
     .section7 > .image6 img {
-        width: 100%;
+        width: 85%;
         margin-left: 0;
     }
     
     .section7 > .info {
-        width: 90%;
+        width: 100%;
         margin-left: 0;
-        padding: 4%;
     }
     
     .section7 > .info h5{
         text-align: center;
+        padding-top: 2%;
+        font-size: 1.5rem;
     }
     
     .section7 > .info p {
+        font-size: 1rem;
+        max-width: 95%;
         text-align: center;
-        font-size: 1.45rem;
-        max-width: 100%;
-        word-break: keep-all;
+    }
+    
+    footer {
+        padding: 40px 0;
+        margin-top: 13%;
+        width: 100%;
+    }
+
+    footer > .logo2 {
+        width: 100%;
+        text-align: center;
+    }
+    
+    footer > .logo2 img {
+        width: 70%;
+    }
+    
+    footer > .icons svg {
+        transition: transform 300ms;
+    }
+
+    footer > .icons {
+        width: 100%;
+        text-align: center;
+    }
+    
+    footer > .icons svg:hover {
+        border-radius: 100px;
+        background-color: var(--White, #FFF);
+        color: var(--White, #FFF);
+        transition: 0.35s;
+    }
+    
+    footer > .p {
+        font-size: 1rem;
     }
 }
 
-@media screen and (max-width: 700px) {
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    header {
+        padding: 0;
+    }
+    
+    header > .iren > .logo {
+        width: 35%;
+    }
+
+    header > .iren > .logo img {
+        width: 100%;
+    }
+
+    header > .iren > div {
+        width: 7%;
+    }
+
+    nav {
+        display: none;
+    }
+
+    .menu-icon{
+        display: block;
+        width: 100%;
+    }
+
+    .menu-icon.hide {
+        display: none;
+    }
+
+    .menu-icon-close.hide{
+        display: block;
+        width: 100%;
+    }
+
+    header > .nav2.visible {
+        display: flex;
+        flex-direction: column;
+        background: var(--Ter, #F8FCFB);
+        gap: 72px;
+        z-index: 7%;
+        padding: 10%;
+        position: fixed;
+        width: 100%;
+        /* position: absolute; */
+    }
+
+    header > .nav2.visible a {
+        color: var(--Mid-grey, #AFAFAF);
+        font-family: 'Playfair Display';
+        font-size: 2rem;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 140%;
+        text-decoration: none;
+        padding: 12px 20px;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    header > .nav2.visible a:hover {
+        transition: 0.25s;
+        border-radius: 100px;
+        background: var(--Pry, #005C4D);
+        color: white;
+    }
+    
+    header > .nav2 .home {
+        color: var(--Pry, #005C4D);
+        font-family: 'Playfair Display';
+        font-size: 1.5rem;
+        font-weight: 600;
+        line-height: 140%;
+    }
+    
+    header > .nav2 button {
+        padding: 12px 40px;
+        color: var(--White, #FFF);
+        font-family: 'Playfair Display';
+        font-size: 2rem;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 140%;
+        border-radius: 100px;
+        background: var(--Pry, #005C4D);
+    }
+    
+    header > .nav2 button:hover {
+        border-radius: 100px;
+        background-color: var(--White, #FFF);
+        color: var(--Pry, #005C4D);
+        transition: 0.25s;
+    }
+
+    .section1 {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-items: center;
+        background-position: center;
+        height: 80vh;
+    }
+    
     .section1 h1 {
         text-align: center;
-        padding: 45% 0;
         font-size: 4rem;
     }
-
-    .main h2 {
-        font-size: 2.5rem;
-        font-weight: 700;
-        padding-bottom: 32px;
+    
+    .main {
+        width: 100%;
+        margin: 7% auto;
     }
-
+    
+    .main h2 {
+        font-size: 3rem;
+    }
+    
     .main > .oops {
-        width: 70%;
+        width: 100%;
         margin: 0 auto;
     }
-}
-
-@media screen and (max-width: 488px) {
-    .section1 h1 {
+    
+    .main > .oops p {
         text-align: center;
-        padding: 65% 0;
-        font-size: 3.75rem;
-        font-weight: 700;
+        font-size: 1.5rem;
+        width: 100%;
+        padding: 0 2%;
     }
-
-    .main h2 {
-        font-size: 2.2rem;
-        font-weight: 700;
-        padding-bottom: 32px;
+    
+    .section2 {
+        display: flex;
+        flex-direction: column;
+        gap: 10%;
+        padding: 40px 0;
+        margin-bottom: 40px;
+        width: 100%;
     }
-
-    .main > .oops {
-        width: 80%;
-        margin: 0 auto;
+    
+    .section2 > .image1 {
+        width: 100%;
+        text-align: center;
     }
-
-    .section2 > .medical p {
-        font-size: 1.2rem;
+    
+    .section2 > .image1 img {
+        width: 85%;
+        margin-left: 0;
     }
-
+    
+    .section2 > .medical {
+        width: 100%;
+        text-align: center;
+        justify-content: center;
+        align-content: center;
+    }
+    
     .section2 > .medical h5 {
-        font-size: 1.75rem;
-    }
-
-    .section3 > .health p {
-        font-size: 1.2rem;
-    }
-
-    .section3 > .health h5 {
-        font-size: 1.75rem;
-    }
-
-    .section4 > .mach p {
-        font-size: 1.2rem;
-    }
-
-    .section4 > .mach h5 {
-        font-size: 1.75rem;
-    }
-
-    .section5 > .tele p {
-        font-size: 1.2rem;
-    }
-
-    .section5 > .tele h5 {
-        font-size: 1.75rem;
-    }
-
-    .section6 > .manage p {
-        font-size: 1.2rem;
-    }
-
-    .section6 > .manage h5 {
-        font-size: 1.75rem;
-    }
-
-    .section7 > .info p {
-        font-size: 1.2rem;
-    }
-
-    .section7 > .info h5 {
-        font-size: 1.75rem;
-    }
-}
-
-@media screen and (max-width: 400px) {
-    .section1 h1 {
-        text-align: center;
-        padding: 85% 0;
-        font-size: 2.75rem;
-        font-weight: 700;
-    }
-
-    .main h2 {
         font-size: 2rem;
-        font-weight: 700;
-        padding-bottom: 32px;
+        text-align: center;
+        padding-top: 2%;
     }
-
-    .main > .oops {
-        width: 80%;
-        margin: 0 auto;
-    }
-
+    
     .section2 > .medical p {
-        font-size: 1rem;
+        font-size: 1.5rem;
+        max-width: 100%;
     }
-
+    
+    .section3 {
+        display: flex;
+        flex-direction: column-reverse;
+        padding: 10% 0;
+        margin-bottom: 40px;
+        width: 100%;
+    }
+    
+    .section3 > .image2 {
+        width: 100%;
+        margin-right: 0;
+        text-align: center;
+    }
+    
+    .section3 > .image2 img {
+        width: 85%;
+        margin-left: 0;
+    }
+    
+    .section3 > .health {
+        width: 100%;
+        margin-left: 0;
+        text-align: center;
+    }
+    
+    .section3 > .health h5{
+        font-size: 2rem;
+        text-align: center;
+        padding-top: 2%;
+    }
+    
     .section3 > .health p {
-        font-size: 1rem;
+        font-size: 1.5rem;
+        max-width: 95%;
     }
-
+    
+    .section4 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10%;
+        padding: 40px 0;
+        margin-bottom: 40px;
+    }
+    
+    .section4 > .image3 {
+        width: 100%;
+        text-align: center;
+    }
+    
+    .section4 > .image3 img {
+        width: 85%;
+        margin-left: 0;
+    }
+    
+    .section4 > .mach {
+        width: 100%;
+        justify-content: center;
+        align-content: center;
+    }
+    
+    .section4 > .mach h5{
+        text-align: center;
+        font-size: 2rem;
+        padding-top: 2%;
+    }
+    
     .section4 > .mach p {
-        font-size: 1rem;
+        text-align: center;
+        font-size: 1.5rem;
+        max-width: 95%;
     }
-
+    
+    .section5 {
+        width: 100%;
+        display: flex;
+        flex-direction: column-reverse;
+        padding: 40px 0;
+    }
+    
+    .section5 > .image4 {
+        width: 100%;
+        margin-right: 0;
+        text-align: center;
+    }
+    
+    .section5 > .image4 img {
+        width: 85%;
+        margin-left: 0;
+    }
+    
+    .section5 > .tele {
+        width: 100%;
+        margin-left: 0;
+    }
+    
+    .section5 > .tele h5{
+        text-align: center;
+        font-size: 2rem;
+    }
+    
     .section5 > .tele p {
-        font-size: 1rem;
+        text-align: center;
+        font-size: 1.5rem;
+        max-width: 95%;
     }
-
+    
+    .section6 {
+        display: flex;
+        flex-direction: column;
+        padding: 40px 0;
+        margin-bottom: 40px;
+    }
+    
+    .section6 > .image5 {
+        width: 100%;
+        text-align: center;
+    }
+    
+    .section6 > .image5 img {
+        width: 85%;
+        margin-left: 0;
+    }
+    
+    .section6 > .manage {
+        width: 100%;
+    }
+    
+    .section6 > .manage h5{
+        text-align: center;
+        font-size: 2rem;
+        padding-top: 2%;
+    }
+    
     .section6 > .manage p {
-        font-size: 1rem;
+        text-align: center;
+        font-size: 1.5rem;
+        max-width: 95%;
+    }
+    
+    .section7 {
+        display: flex;
+        flex-direction: column-reverse;
+        width: 100%;
+    }
+    
+    .section7 > .image6 {
+        width: 100%;
+        margin-right: 0;
+        text-align: center;
+    }
+    
+    .section7 > .image6 img {
+        width: 85%;
+        margin-left: 0;
+    }
+    
+    .section7 > .info {
+        width: 100%;
+        margin-left: 0;
+    }
+    
+    .section7 > .info h5{
+        text-align: center;
+        padding-top: 2%;
+        font-size: 2rem;
+    }
+    
+    .section7 > .info p {
+        font-size: 1.5rem;
+        max-width: 95%;
+        text-align: center;
+    }
+    
+    footer {
+        padding: 40px 0;
+        margin-top: 13%;
+        width: 100%;
     }
 
-    .section7 > .info p {
-        font-size: 1rem;
+    footer > .logo2 {
+        width: 100%;
+        text-align: center;
+    }
+    
+    footer > .logo2 img {
+        width: 60%;
+    }
+    
+    footer > .icons svg {
+        transition: transform 300ms;
+        width: 10%;
+        height: 10%;
+    }
+
+    footer > .icons {
+        width: 100%;
+        text-align: center;
+    }
+    
+    footer > .icons svg:hover {
+        border-radius: 100px;
+        background-color: var(--White, #FFF);
+        color: var(--White, #FFF);
+        transition: 0.35s;
+    }
+    
+    footer > .p {
+        font-size: 2rem;
     }
 }

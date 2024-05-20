@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
 * {
     padding: 0;
     margin: 0;
@@ -20,6 +22,14 @@ header > .ire {
     position: fixed;
     z-index: 4;
     top: 0;
+    width: 100%;
+}
+
+header > .ire > .logo {
+    width: 18%;
+}
+
+header > .ire > .logo img {
     width: 100%;
 }
 
@@ -89,8 +99,9 @@ button:hover {
 section > .irene {
     background-image: url(hero2.png);
     background-repeat: no-repeat;
+    background-position: center;
     width: 100%;
-    height: 90vh;
+    height: 100vh;
     margin: 100px 0;
 }
 
@@ -140,6 +151,7 @@ section > .duddy .grey p {
 }
 
 section > .section1 {
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -196,8 +208,8 @@ section > .section1 > .icons > .locate, .mail, .device, .shop {
     width: 100%;
 }
 
-.section2 image {
-    width: 100%;
+.section2 > .gogo img {
+    width: 7%;
 }
 
 .section2 > .gogo {
@@ -225,6 +237,7 @@ section > .section1 > .icons > .locate, .mail, .device, .shop {
 }
 
 footer {
+    width: 100%;
     background-color: var(--Pry, #005C4D);
     display: flex;
     justify-content: center;
@@ -235,21 +248,31 @@ footer {
     margin-top: 13%;
 }
 
-footer > .icons {
-    gap: 60px;
+footer > .logo2 {
+    width: 100%;
+    text-align: center;
+}
+
+footer > .logo2 img {
+    width: 15%;
 }
 
 footer > .icons svg {
     width: 40px;
     height: 36px;
     gap: 40px;
-    border: 2px solid  #DCE9E2;
-    border-radius: 100%;
+    border: 2px solid #DCE9E2;
+    border-radius: 90%;
     border-width: 300ms;
     background-color: var(--Sec, #DCE9E2);
     color: white;
     transition: transform 300ms;
     margin: 25px 15px;
+}
+
+footer > .icons {
+    width: 100%;
+    text-align: center;
 }
 
 footer > .icons svg:hover {
@@ -263,32 +286,19 @@ footer > .p {
     color: var(--Ter, #F8FCFB);
     text-align: center;
     font-family: 'Playfair Display';
-    font-size: 16px;
+    font-size: 1rem;
     font-style: normal;
     font-weight: 700;
     line-height: 140%;
 }
 
-@media screen and (max-width: 1153px) {
-    section > .irene {
-        width: 100%;
-        height: 80vh;
-        margin: 100px 0;
-    }
-    
-    section > .irene h1 {
-        text-align: center;
-        padding: 26% 0;
+@media screen and (min-width: 320px) and (max-width: 480px) {
+    header > .ire > .left {
+        width: 35%;
     }
 
-    section > .section1 .image img {
-        width: 90%;
-    }
-}
-
-@media screen and (max-width: 981px) {
     header > .ire > .left img {
-        width: 80%;
+        width: 100%;
     }
 
     nav {
@@ -316,6 +326,8 @@ footer > .p {
         gap: 72px;
         z-index: 7%;
         padding: 10%;
+        position: fixed;
+        width: 100%;
     }
 
     header > .nav2.visible a {
@@ -364,178 +376,393 @@ footer > .p {
         color: var(--Pry, #005C4D);
         transition: 0.25s;
     }
-}
 
-@media screen and (max-width: 851px) {
-    section > .irene h1 {
-        text-align: center;
-        padding: 35% 0;
-    }
-
-    section > .duddy .grey {
-        width: 70%;
+    section > .irene {
+        background-position: center;
+        width: 100%;
+        height: 100vh;
         margin: 0 auto;
+        display: flex;
+        align-items: center;
+        justify-items: center;
     }
-
+    
+    section > .irene h1 {
+        font-size: 4rem;
+        text-align: center;
+        padding: 0;
+    }
+    
+    section > .duddy {
+        width: 100%;
+        margin: 7% 0;
+    }
+    
+    section > .duddy h2 {
+        text-align: center;
+        font-size: 2rem;
+    }
+    
+    section > .duddy .grey {
+        width: 100%;
+        margin: 0;
+    }
+    
     section > .duddy .grey p {
-        max-width: 100%;
+        text-align: center;
+        font-size: 1rem;
+        max-width: 95%;
     }
-
+    
     section > .section1 {
         display: flex;
         flex-direction: column;
+        padding: 90px 0 30px 0;
+        width: 100%;
     }
-
+    
     section > .section1 .image {
-        width: 60%;
+        width: 100%;
+        text-align: center;
     }
     
     section > .section1 .image img {
-        width: 100%;
+        width: 80%;
         margin-left: 0;
     }
-
-    section > .section1 > .icons {
-        width: 90%;
-        display: flex;
-        margin-right: 0;
-    }
-        
-    section > .section1 >.icons img {
-        width: 50%;
-        flex-direction: row;
-    }
     
-    section > .section1 > .icons > .locate, .mail, .device, .shop {
-        flex-direction: column;
-        gap: 24px;
-        margin: 15% auto;
-        margin-bottom: 40px;
-    }
-}
-
-@media screen and (max-width: 730px) {
-    section > .duddy h2 {
-        font-size: 40px;
-    }
-
-    section > .section1 >.icons {
-        width: 100%;
-        flex-wrap: wrap;
-        margin: 6% 0 0 0;
-        align-content: center;
-        justify-content: center;
-    }
-
-    section > .section1 >.icons img {
-        width: 30%;
-        margin-right: 0;
-        align-content: center;
-        justify-content: center;
-    }
-    
-    section > .section1 > .icons > .locate, .mail, .device, .shop {
-        flex-basis: 50%;
-        gap: 0;
-        width: 100%;
-        margin-right: 0;
-        margin-bottom: 0;
-        margin: 5% 0;
-        gap: 10px;
-        align-items: center;
-    }
-
     section > .section1 > .icons div h5 {
         font-size: 1.5rem;
-        font-weight: 700;
         text-align: center;
     }
     
     section > .section1 > .icons > p {
-        font-size: 2rem;
-        font-weight: 600;
-    }
-}
-
-@media screen and (max-width: 689px) {
-    section > .section1 > .icons {
-        width: 80%;
-        margin-right: 0;
-    }
-
-    section > .section1 >.icons img {
-        width: 40%;
-    }
-}
-
-@media screen and (max-width: 554px) {
-    section > .irene {
-        width: 100%;
-        height: 80vh;
-        margin: 80px 0;
-    }
-
-    section > .irene h1 {
         text-align: center;
-        padding: 47% 0;
+        font-size: 1rem;
     }
-}
-
-@media screen and (max-width: 485px) {
-    section > .duddy h2 {
-        font-size: 35px;
-    }
-    .section2 > .gogo p {
-        font-size: 1.1rem;
-        font-weight: 600;
-    }
-
+    
     section > .section1 > .icons {
         width: 100%;
-        margin-right: 0;
+        margin-top: 20%;
+        text-align: center;
     }
-
+        
     section > .section1 >.icons img {
-        width: 33%;
-    }
-
-    section > .section1 > .icons div h5 {
-        font-size: 1.3rem;
-        font-weight: 700;
-    }
-}
-
-@media screen and (max-width: 419px) {
-    section > .irene {
-        width: 100%;
-        height: 80vh;
-        margin: 40px 0;
-    }
-
-    section > .irene h1 {
+        width: 15%;
         text-align: center;
-        padding: 67% 0;
-        font-size: 45px;
     }
-}
-
-@media screen and (max-width: 376px) {
-    section > .duddy h2 {
-        font-size: 30px;
-    }
-    section > .irene h1 {
-        text-align: center;
-        padding: 80% 0;
-        font-size: 45px;
-    }
-
+    
     section > .section1 > .icons > .locate, .mail, .device, .shop {
-        align-content: center;
+        display: flex;
         justify-content: center;
+        align-content: center;
+        width: 100%;
+        gap: 24px;
+        margin-bottom: 40px;
+    }
+    
+    .section2 {
+        padding: 7%;
+        width: 100%;
+    }
+    
+    .section2 > .gogo img {
+        width: 10%;
+    }
+    
+    .section2 > .gogo {
+        width: 100%;
+        display: flex;
+        align-items: center;
+    }
+    
+    .section2 > .gogo p {
+        font-size: 1rem;
+    }
+    
+    .map {
+        width: 100%;
+    }
+    
+    .map img {
+        width: 100%;
+    }
+    
+    footer {
+        padding: 40px 0;
+        margin-top: 13%;
+        width: 100%;
     }
 
+    footer > .logo2 {
+        width: 100%;
+        text-align: center;
+    }
+    
+    footer > .logo2 img {
+        width: 70%;
+    }
+    
+    footer > .icons svg {
+        transition: transform 300ms;
+    }
+
+    footer > .icons {
+        width: 100%;
+        text-align: center;
+    }
+    
+    footer > .icons svg:hover {
+        border-radius: 100px;
+        background-color: var(--White, #FFF);
+        color: var(--White, #FFF);
+        transition: 0.35s;
+    }
+    
+    footer > .p {
+        font-size: 1rem;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    header > .ire > .left {
+        width: 35%;
+    }
+
+    header > .ire > .left img {
+        width: 100%;
+    }
+
+    header > .ire > div {
+        width: 7%;
+    }
+
+    nav {
+        display: none;
+    }
+
+    .menu-icon{
+        display: block;
+        width: 100%;
+    }
+
+    .menu-icon.hide {
+        display: none;
+    }
+
+    .menu-icon-close.hide{
+        display: block;
+        width: 100%;
+    }
+
+    header > .nav2.visible {
+        display: flex;
+        flex-direction: column;
+        background: var(--Ter, #F8FCFB);
+        gap: 72px;
+        z-index: 7%;
+        padding: 10%;
+        position: fixed;
+        width: 100%;
+    }
+
+    header > .nav2.visible a {
+        color: var(--Mid-grey, #AFAFAF);
+        font-family: 'Playfair Display';
+        font-size: 1.5rem;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 140%;
+        text-decoration: none;
+        padding: 12px 20px;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    header > .nav2.visible a:hover {
+        transition: 0.25s;
+        border-radius: 100px;
+        background: var(--Pry, #005C4D);
+        color: white;
+    }
+    
+    header > .nav2 .home {
+        color: var(--Pry, #005C4D);
+        font-family: 'Playfair Display';
+        font-size: 1.5rem;
+        font-weight: 600;
+        line-height: 140%;
+    }
+    
+    header > .nav2 button {
+        padding: 12px 40px;
+        color: var(--White, #FFF);
+        font-family: 'Playfair Display';
+        font-size: 1.375rem;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 140%;
+        border-radius: 100px;
+        background: var(--Pry, #005C4D);
+    }
+    
+    header > .nav2 button:hover {
+        border-radius: 100px;
+        background-color: var(--White, #FFF);
+        color: var(--Pry, #005C4D);
+        transition: 0.25s;
+    }
+
+    section > .irene {
+        background-position: center;
+        width: 100%;
+        height: 80vh;
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+        justify-items: center;
+    }
+    
+    section > .irene h1 {
+        font-size: 4rem;
+        text-align: center;
+        padding: 0;
+        margin: 0 auto;
+    }
+    
+    section > .duddy {
+        width: 100%;
+        margin: 7% 0;
+    }
+    
+    section > .duddy h2 {
+        text-align: center;
+        font-size: 3rem;
+    }
+    
+    section > .duddy .grey {
+        width: 100%;
+        margin: 0;
+    }
+    
+    section > .duddy .grey p {
+        text-align: center;
+        font-size: 1.5rem;
+        max-width: 95%;
+    }
+    
+    section > .section1 {
+        display: flex;
+        flex-direction: column;
+        padding: 90px 0 100px 0;
+        width: 100%;
+    }
+    
+    section > .section1 .image {
+        width: 100%;
+        text-align: center;
+    }
+    
+    section > .section1 .image img {
+        width: 80%;
+        margin-left: 0;
+    }
+    
+    section > .section1 > .icons div h5 {
+        font-size: 2rem;
+        text-align: center;
+    }
+    
+    section > .section1 > .icons > p {
+        text-align: center;
+        font-size: 2rem;
+    }
+    
     section > .section1 > .icons {
         width: 100%;
-        margin-right: 0;
+        margin-top: 20%;
+        text-align: center;
+        display: grid;
+        grid-template-columns: auto auto;
+        row-gap: 30%;
+    }
+        
+    section > .section1 >.icons img {
+        width: 25%;
+        text-align: center;
+    }
+    
+    section > .section1 > .icons > .locate, .mail, .device, .shop {
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        width: 100%;
+        gap: 24px;
+        margin-bottom: 40px;
+    }
+    
+    .section2 {
+        padding: 7%;
+        margin-top: 20%;
+        width: 100%;
+    }
+    
+    .section2 > .gogo img {
+        width: 13%;
+    }
+    
+    .section2 > .gogo {
+        width: 100%;
+        display: flex;
+        align-items: center;
+    }
+    
+    .section2 > .gogo p {
+        font-size: 1.5rem;
+    }
+    
+    .map {
+        width: 100%;
+    }
+    
+    .map img {
+        width: 100%;
+    }
+    
+    footer {
+        padding: 40px 0;
+        margin-top: 13%;
+        width: 100%;
+    }
+
+    footer > .logo2 {
+        width: 100%;
+        text-align: center;
+    }
+    
+    footer > .logo2 img {
+        width: 60%;
+    }
+    
+    footer > .icons svg {
+        transition: transform 300ms;
+        width: 10%;
+        height: 10%;
+    }
+
+    footer > .icons {
+        width: 100%;
+        text-align: center;
+    }
+    
+    footer > .icons svg:hover {
+        border-radius: 100px;
+        background-color: var(--White, #FFF);
+        color: var(--White, #FFF);
+        transition: 0.35s;
+    }
+    
+    footer > .p {
+        font-size: 2rem;
     }
 }
